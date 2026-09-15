@@ -153,6 +153,41 @@ Para cada entidade identificada, liste:
 ---
 
 ## 9. Uso de Inteligência Artificial
+
+Aqui está o modelo pronto para a seção **Uso de Inteligência Artificial**, já estruturado conforme a tabela exigida pelo seu trabalho, refletindo o apoio na organização das ideias, modelagem do DER e elaboração dos requisitos:
+
+---
+
+### **Uso de Inteligência Artificial**
+
+| Item | O que registrar |
+| --- | --- |
+| **Ferramenta e etapa** | **Gemini (Google)** — Utilizada nas etapas de organização de requisitos, criação de dados fictícios, estruturação da modelagem conceitual, elaboração do Dicionário de Dados e mapeamento de regras de negócio a partir do DER. |
+| **Motivação** | Agilizar a estruturação teórica do relatório, garantir a padronização das tabelas de requisitos e obter exemplos de dados fictícios coerentes com o Diagrama Entidade-Relacionamento da loja de fantasias. |
+| **Prompt(s) utilizados** | • *"cria os dados fictícios de um cliente de uma loja de fantasias e para a loja tambem, de acordo com as coisas que tem na imagem"* <br>
+
+<br> • *"3.2 Requisitos Não Funcionais (...) diminui"* <br>
+
+<br> • *"Regras de Negócio (...) diminui"* <br>
+
+<br> • *"6. Modelagem Conceitual (...) e o 6 seria como"* <br>
+
+<br> • *"5. Dicionário de Dados Conceitual (...)"* |
+| **Resposta recebida** | Resumos estruturados de Requisitos Não Funcionais, tabelas e listas de dados fictícios, descrição detalhada dos pilares da modelagem conceitual (entidades, atributos, relacionamentos, restrições) e a estrutura completa em tabelas para o Dicionário de Dados. |
+| **Fontes consultadas e verificadas** | Validação manual do modelo conceitual gerado comparando-o diretamente com o Diagrama Entidade-Relacionamento (DER) fornecido para garantir total consistência dos nomes de campos e cardinalidades. |
+| **Trechos rejeitados ou corrigidos** | As primeiras respostas de Requisitos Não Funcionais e Regras de Negócio foram descartadas por serem muito extensas; foram solicitadas versões mais diretas e resumidas para adequação ao relatório. |
+| **Justificativa da escolha final** | Mantiveram-se as versões resumidas dos Requisitos, das Regras de Negócio e o formato tabular do Dicionário de Dados, pois garantem clareza técnica e objetividade na documentação do projeto. |
+| **Reflexão crítica** | A IA auxiliou na velocidade de escrita e organização dos tópicos. Contudo, foi necessária supervisão constante para garantir que os nomes dos atributos e cardinalidades não desviassem do DER original. |
+
+---
+
+### **Resumo da Avaliação e Entregáveis**
+
+Como lembrete para o fechamento do seu projeto:
+
+* **Critérios Atitudinais (20%):** Garantidos através do histórico de *commits* no GitHub e da Avaliação 360º (Participação, Comprometimento, Colaboração e Autonomia).
+* **Estrutura Final do Repositório:** O arquivo `README.md` principal deve conter todas as seções (Requisitos, Processos, Regras de Negócio, Modelagem Conceitual e Uso de IA), acompanhado da imagem do DER e da versão HTML do Dicionário de Dados.
+
 *(documentação obrigatória — não é opcional se o grupo usou IA em qualquer etapa: pesquisa, escrita, organização de ideias ou revisão de texto)*
 
 Se o grupo usou alguma ferramenta de IA (ChatGPT, Claude, Gemini, Perplexity etc.) em qualquer parte do trabalho, registre **para cada uso relevante**:
