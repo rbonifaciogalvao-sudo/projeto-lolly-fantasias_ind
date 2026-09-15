@@ -74,8 +74,11 @@ ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia
 *O que o sistema precisa FAZER (ex.: "o sistema deve permitir registrar uma venda").*
 
 ### 3.2 Requisitos Não Funcionais
-*Características de qualidade (ex.: desempenho, segurança, usabilidade, disponibilidade).*
-
+Segurança: Login por perfil de usuário e conformidade com a LGPD.
+Desempenho: Respostas do sistema em até 3 segundos.
+Usabilidade: Tela de caixa simples e aviso visual de estoque baixo.
+Disponibilidade: Operacional durante todo o horário comercial.
+Confiabilidade: Cancelamento de vendas interrompidas para proteger o estoque.
 ---
 
 ## 4. Regras de Negócio
