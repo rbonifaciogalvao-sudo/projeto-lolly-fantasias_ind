@@ -58,6 +58,14 @@ ID: 1 | Quantidade: 1 | Valor Unitário: R$ 180,00 | ID Venda: 1001 | ID Fantasi
 ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia: 502
 
 
+
+
+
+
+
+
+<img width="3619" height="276" alt="Fluxograma" src="https://github.com/user-attachments/assets/ef0c548a-1762-4364-ac81-30f385c6caba" />
+
 - **Fluxogramas:** (Opcional) *represente visualmente pelo menos os processos-chave (imagens anexadas). Deve ficar claro o fluxo de cada processo e como eles se integram entre si.*
 
 
