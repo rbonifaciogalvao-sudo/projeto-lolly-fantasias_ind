@@ -28,17 +28,17 @@
 - Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e 2 pessoas trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias.
 
 - **Problemas e necessidades identificados:**
--
--
--
--     *qual é a "crise operacional" — o que está desorganizado hoje (planilhas soltas, papel, falta de controle de estoque/doações/cadastros, etc.)?*
+- Falta de controle sobre a entrada e saída de mercadorias, vendas, fechamento de caixa e fluxo de caixa.
 
-
-
-- **Justificativa da escolha:** *por que essa organização foi escolhida e por que ela é um bom caso para o projeto?*
-
-- 
-- **Evidências da organização:** *comprove que a organização existe e que o grupo teve acesso a ela — ex.: fotos do local/da visita, link da organização no Google (Google Maps/Google Meu Negócio, site, rede social), endereço completo e forma de contato (telefone, e-mail, responsável pela organização).*
+- **Justificativa da escolha:**
+- A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
+  
+- **Evidências da organização:**
+- <img width="1600" height="1200" alt="WhatsApp Image 2026-09-15 at 18 51 17" src="https://github.com/user-attachments/assets/5375913f-bdce-4f64-876e-5687abf2521d" />
+- https://maps.app.goo.gl/97rXVKvdabmSye7s7
+- R. Alexandrino Pedroso, 264 - Loja 16 - Canindé, São Paulo - SP, 03031-030, Brasil
+- https://www.instagram.com/lollyfantasias?stkn=MWg5dmlhdmF6ZngyNQ==
+- 11 94708-2631
 
 ---
 
@@ -51,8 +51,8 @@ ID: 1 | Nome: Mariana Souza | Telefone: (11) 98765-4321 | Endereço: Av. Paulist
 ID: 2 | Nome: Carlos Eduardo | Telefone: (21) 99876-5432 | Endereço: Rua das Flores, 45 - Rio de Janeiro, RJ
 
 FUNCIONÁRIO
-ID: 101 | Nome: Beatriz Lima | Cargo: Vendedora | Telefone: (11) 97654-3210
-ID: 102 | Nome: Lucas Mendes | Cargo: Gerente | Telefone: (11) 96543-2109
+ID: 101 | Nome: Beatriz Lima | Cargo: Dona | Telefone: (11) 97654-3210
+ID: 102 | Nome: Lucas Mendes | Cargo: Vendedor | Telefone: (11) 96543-2109
 
 FORNECEDOR
 CNPJ: 12.345.678/0001-90 | Nome: Magia & Fantasias Ltda | Telefone: (11) 3333-4444
@@ -67,8 +67,8 @@ ID: 1001 | Data Venda: 15/10/2026 | Forma Pagamento: Cartão de Crédito | ID Cl
 ID: 1002 | Data Venda: 16/10/2026 | Forma Pagamento: PIX | ID Cliente: 2 | ID Funcionário: 101
 
 ITEM_VENDA
-ID: 1 | Quantidade: 1 | Valor Unitário: R$ 180,00 | ID Venda: 1001 | ID Fantasia: 501
-ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia: 502
+ID: 1 | Quantidade: 1 | Valor Unitário: R$ 20,00 | ID Venda: 1001 | ID Fantasia: 501
+ID: 2 | Quantidade: 2 | Valor Unitário: R$ 40,00 | ID Venda: 1002 | ID Fantasia: 502
 
 <img width="3619" height="276" alt="Fluxograma" src="https://github.com/user-attachments/assets/ef0c548a-1762-4364-ac81-30f385c6caba" />
 
@@ -78,7 +78,14 @@ ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia
 
 
 ### 3.1 Requisitos Funcionais
+- O sistema deve 
+
+
+
+
 *O que o sistema precisa FAZER (ex.: "o sistema deve permitir registrar uma venda").*
+
+
 
 ### 3.2 Requisitos Não Funcionais
 Segurança: Login por perfil de usuário e conformidade com a LGPD.
