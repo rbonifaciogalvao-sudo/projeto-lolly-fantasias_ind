@@ -21,10 +21,23 @@
 ## 1. Caracterização da Organização
 
 
-- **Nome e natureza da organização:** *qual organização real o grupo escolheu (com acesso garantido para pesquisa de campo) — pode ser uma empresa (livraria, lanchonete, pet shop), uma ONG, uma associação comunitária ou outra instituição.*
-- **Contexto e porte:** *com ou sem fins lucrativos; tamanho da operação; número de pessoas envolvidas (funcionários, voluntários, membros, fiéis); volume de atividades (vendas, atendimentos, doações, rituais, eventos).*
-- **Problemas e necessidades identificados:** *qual é a "crise operacional" — o que está desorganizado hoje (planilhas soltas, papel, falta de controle de estoque/doações/cadastros, etc.)?*
+- **Nome e natureza da organização:**
+-Lolly Fantasias. Loja especializada na venda de fantasias infantis e adultas.
+
+- **Contexto e porte:**
+- Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e 2 pessoas trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias.
+
+- **Problemas e necessidades identificados:**
+-
+-
+-
+-     *qual é a "crise operacional" — o que está desorganizado hoje (planilhas soltas, papel, falta de controle de estoque/doações/cadastros, etc.)?*
+
+
+
 - **Justificativa da escolha:** *por que essa organização foi escolhida e por que ela é um bom caso para o projeto?*
+
+- 
 - **Evidências da organização:** *comprove que a organização existe e que o grupo teve acesso a ela — ex.: fotos do local/da visita, link da organização no Google (Google Maps/Google Meu Negócio, site, rede social), endereço completo e forma de contato (telefone, e-mail, responsável pela organização).*
 
 ---
@@ -57,21 +70,7 @@ ITEM_VENDA
 ID: 1 | Quantidade: 1 | Valor Unitário: R$ 180,00 | ID Venda: 1001 | ID Fantasia: 501
 ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia: 502
 
-
-
-
-
-
-
-
 <img width="3619" height="276" alt="Fluxograma" src="https://github.com/user-attachments/assets/ef0c548a-1762-4364-ac81-30f385c6caba" />
-
-- **Fluxogramas:** (Opcional) *represente visualmente pelo menos os processos-chave (imagens anexadas). Deve ficar claro o fluxo de cada processo e como eles se integram entre si.*
-
-
-
-
-
 
 ---
 
