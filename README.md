@@ -14,6 +14,8 @@
 ## Metadados
 
 - **Nomes dos alunos e RGM**
+- Rafaela Bonifacio Galvão - 48178837
+- 
 
 ## 1. Caracterização da Organização
 *(vale 7,5% — Dimensão Conceitual)*
