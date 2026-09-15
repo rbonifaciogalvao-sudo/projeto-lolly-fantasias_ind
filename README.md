@@ -30,6 +30,8 @@
 - **Problemas e necessidades identificados:**
 - Falta de controle sobre a entrada e saída de mercadorias, vendas, fechamento de caixa e fluxo de caixa.
 
+
+
 - **Justificativa da escolha:**
 - A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
   
@@ -78,13 +80,7 @@ ID: 2 | Quantidade: 2 | Valor Unitário: R$ 40,00 | ID Venda: 1002 | ID Fantasia
 
 
 ### 3.1 Requisitos Funcionais
-- O sistema deve 
-
-
-
-
-*O que o sistema precisa FAZER (ex.: "o sistema deve permitir registrar uma venda").*
-
+- O sistema deve permitir o controle da entrada e saída de mercadorias, registrar as vendas, realizar o fechamento de caixa e acompanhar o fluxo de caixa.
 
 
 ### 3.2 Requisitos Não Funcionais
@@ -104,21 +100,14 @@ Confiabilidade: Cancelamento de vendas interrompidas para proteger o estoque.
 
 Regras Operacionais
 
-Venda e Estoque: Vendas só são finalizadas se houver QUANTIDADE DISPONIVEL em estoque.
-
-Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MINIMA.
-
-Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos um ITEM_VENDA.
-
-Origem do Produto: Toda fantasia deve estar vinculada a um FORNECEDOR cadastrado.
-
-Restrições Organizacionais
-
-Privacidade (LGPD): Dados do cliente (telefone e endereço) só são armazenados com autorização prévia.
-
-Política de Trocas: Alterações ou cancelamentos exigem autorização do Gerente em até 7 dias.
-
-Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
+- Venda e Estoque: Vendas só são finalizadas se houver QUANTIDADE DISPONIVEL em estoque.
+- Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MINIMA.
+- Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos um ITEM_VENDA.
+- Origem do Produto: Toda fantasia deve estar vinculada a um FORNECEDOR cadastrado.
+- Restrições Organizacionais
+- Privacidade (LGPD): Dados do cliente (telefone e endereço) só são armazenados com autorização prévia.
+- Política de Trocas: Alterações ou cancelamentos exigem autorização do Gerente em até 7 dias.
+- Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
 
 ---
 ## 5. Dicionário de Dados Conceitual (Preliminar)
