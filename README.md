@@ -106,6 +106,7 @@ Política de Trocas: Alterações ou cancelamentos exigem autorização do Geren
 
 Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
 
+---
 ## 5. Dicionário de Dados Conceitual (Preliminar)
 *(vale 10% — Dimensão Procedimental - Segue o modelo do arquivo 02-03g_Exemplo_Dicionario_Dados.pdf)*
 
