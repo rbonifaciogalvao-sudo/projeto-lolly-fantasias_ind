@@ -15,7 +15,8 @@
 
 - **Nomes dos alunos e RGM**
 - Rafaela Bonifacio Galvão - 48178837
-- 
+- Wilchid Vilsaint - 47443227
+- Yago Lima de Queiroz - 48140597
 
 ## 1. Caracterização da Organização
 *(vale 7,5% — Dimensão Conceitual)*
