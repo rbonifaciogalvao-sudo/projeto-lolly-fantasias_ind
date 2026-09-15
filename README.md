@@ -154,9 +154,6 @@ Para cada entidade identificada, liste:
 
 ## 9. Uso de Inteligência Artificial
 
-Aqui está o modelo pronto para a seção **Uso de Inteligência Artificial**, já estruturado conforme a tabela exigida pelo seu trabalho, refletindo o apoio na organização das ideias, modelagem do DER e elaboração dos requisitos:
-
----
 
 ### **Uso de Inteligência Artificial**
 
