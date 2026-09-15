@@ -32,7 +32,32 @@
 ## 2. Processos de Negócio
 *(vale 10% — Dimensão Procedimental)*
 
-- **Principais processos mapeados:** *ex.: cadastro de clientes/beneficiários/fiéis, controle de estoque ou doações, vendas ou arrecadação, emissão de pedidos ou solicitações, entregas ou distribuição, organização de eventos/rituais/mutirões.*
+- **Principais processos mapeados:**
+CLIENTE
+ID: 1 | Nome: Mariana Souza | Telefone: (11) 98765-4321 | Endereço: Av. Paulista, 1000 - São Paulo, SP
+ID: 2 | Nome: Carlos Eduardo | Telefone: (21) 99876-5432 | Endereço: Rua das Flores, 45 - Rio de Janeiro, RJ
+
+FUNCIONÁRIO
+ID: 101 | Nome: Beatriz Lima | Cargo: Vendedora | Telefone: (11) 97654-3210
+ID: 102 | Nome: Lucas Mendes | Cargo: Gerente | Telefone: (11) 96543-2109
+
+FORNECEDOR
+CNPJ: 12.345.678/0001-90 | Nome: Magia & Fantasias Ltda | Telefone: (11) 3333-4444
+CNPJ: 98.765.432/0001-10 | Nome: Distribuidora Cosplay Brasil | Telefone: (41) 3222-1111
+
+FANTASIA
+ID Fantasia: 501 | Nome: Fantasia Pirata dos Mares | Gênero: Unissex | Tamanho: M | Categoria: Adulto / Festas | Preço Venda: R$ 180,00 | Qtd Mínima: 2 | Qtd Disponível: 8 | CNPJ Fornecedor: 12.345.678/0001-90
+ID Fantasia: 502 | Nome: Capa de Vampiro Clássica | Gênero: Masculino | Tamanho: G | Categoria: Halloween | Preço Venda: R$ 95,00 | Qtd Mínima: 5 | Qtd Disponível: 15 | CNPJ Fornecedor: 98.765.432/0001-10
+
+VENDA
+ID: 1001 | Data Venda: 15/10/2026 | Forma Pagamento: Cartão de Crédito | ID Cliente: 1 | ID Funcionário: 101
+ID: 1002 | Data Venda: 16/10/2026 | Forma Pagamento: PIX | ID Cliente: 2 | ID Funcionário: 101
+
+ITEM_VENDA
+ID: 1 | Quantidade: 1 | Valor Unitário: R$ 180,00 | ID Venda: 1001 | ID Fantasia: 501
+ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia: 502
+
+
 - **Fluxogramas:** (Opcional) *represente visualmente pelo menos os processos-chave (imagens anexadas). Deve ficar claro o fluxo de cada processo e como eles se integram entre si.*
 
 ---
