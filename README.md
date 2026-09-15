@@ -87,6 +87,16 @@ Confiabilidade: Cancelamento de vendas interrompidas para proteger o estoque.
 ---
 
 ## 4. Regras de Negócio
+
+Venda e Estoque: Vendas só são finalizadas se houver QUANTIDADE DISPONIVEL em estoque.
+Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MINIMA.
+Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos um ITEM_VENDA.
+Origem do Produto: Toda fantasia deve estar vinculada a um FORNECEDOR cadastrado.
+Restrições Organizacionais
+Privacidade (LGPD): Dados do cliente (telefone e endereço) só são armazenados com autorização prévia.
+Política de Trocas: Alterações ou cancelamentos exigem autorização do Gerente em até 7 dias.
+Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
+
 *(esta seção DIVIDE com a Seção 3 "Requisitos do Sistema" os mesmos 7,5% da dimensão conceitual — juntas valem 7,5%, não 7,5% cada — + 4% exclusivos desta seção na documentação. "Regras de negócio" é o termo técnico usado em modelagem de dados para as regras de funcionamento de qualquer organização, com ou sem fins lucrativos)*
 
 - **Regras operacionais:** *condições que a organização impõe (ex.: "um pedido só pode ser fechado se houver estoque disponível", "uma doação só pode ser registrada com identificação do doador", "um ritual só pode ser agendado se o espaço estiver disponível").*
