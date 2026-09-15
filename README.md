@@ -60,6 +60,11 @@ ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia
 
 - **Fluxogramas:** (Opcional) *represente visualmente pelo menos os processos-chave (imagens anexadas). Deve ficar claro o fluxo de cada processo e como eles se integram entre si.*
 
+
+
+
+
+
 ---
 
 ## 3. Requisitos do Sistema
