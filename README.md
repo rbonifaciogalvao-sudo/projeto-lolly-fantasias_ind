@@ -48,7 +48,7 @@
 
 
 - **Principais processos mapeados:**
-- 
+
 - CLIENTE
 ID: 1 | Nome: Mariana Souza | Telefone: (11) 98765-4321 | Endereço: Av. Paulista, 1000 - São Paulo, SP
 ID: 2 | Nome: Carlos Eduardo | Telefone: (21) 99876-5432 | Endereço: Rua das Flores, 45 - Rio de Janeiro, RJ
@@ -85,15 +85,13 @@ ID: 2 | Quantidade: 2 | Valor Unitário: R$ 40,00 | ID Venda: 1002 | ID Fantasia
 
 
 ### 3.2 Requisitos Não Funcionais
-Segurança: Login por perfil de usuário e conformidade com a LGPD.
 
-Desempenho: Respostas do sistema em até 3 segundos.
 
-Usabilidade: Tela de caixa simples e aviso visual de estoque baixo.
-
-Disponibilidade: Operacional durante todo o horário comercial.
-
-Confiabilidade: Cancelamento de vendas interrompidas para proteger o estoque.
+- Segurança: Login por perfil de usuário e conformidade com a LGPD.
+- Desempenho: Respostas do sistema de forma rápida.
+- Usabilidade: Tela de caixa simples e aviso visual de estoque baixo.
+- Disponibilidade: Operacional durante todo o horário comercial.
+- Confiabilidade: Cancelamento de vendas interrompidas para proteger o estoque.
 
 ---
 
