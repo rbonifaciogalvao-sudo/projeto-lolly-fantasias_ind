@@ -19,7 +19,7 @@
 - Yago Lima de Queiroz - 48140597
 
 ## 1. Caracterização da Organização
-*(vale 7,5% — Dimensão Conceitual)*
+
 
 - **Nome e natureza da organização:** *qual organização real o grupo escolheu (com acesso garantido para pesquisa de campo) — pode ser uma empresa (livraria, lanchonete, pet shop), uma ONG, uma associação comunitária ou outra instituição.*
 - **Contexto e porte:** *com ou sem fins lucrativos; tamanho da operação; número de pessoas envolvidas (funcionários, voluntários, membros, fiéis); volume de atividades (vendas, atendimentos, doações, rituais, eventos).*
@@ -30,7 +30,7 @@
 ---
 
 ## 2. Processos de Negócio
-*(vale 10% — Dimensão Procedimental)*
+
 
 - **Principais processos mapeados:**
 CLIENTE
@@ -68,7 +68,7 @@ ID: 2 | Quantidade: 2 | Valor Unitário: R$ 95,00 | ID Venda: 1002 | ID Fantasia
 ---
 
 ## 3. Requisitos do Sistema
-*(esta seção e a Seção 4 "Regras de Negócio" DIVIDEM 7,5% na dimensão conceitual — juntas valem 7,5%, não 7,5% cada — + 4% exclusivos desta seção na organização/documentação)*
+
 
 ### 3.1 Requisitos Funcionais
 *O que o sistema precisa FAZER (ex.: "o sistema deve permitir registrar uma venda").*
