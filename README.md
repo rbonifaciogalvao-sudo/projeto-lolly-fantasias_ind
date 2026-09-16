@@ -20,7 +20,6 @@
 
 ## 1. Caracterização da Organização
 
-
 - **Nome e natureza da organização:**
 -Lolly Fantasias. Loja especializada na venda de fantasias infantis e adultas.
 
@@ -29,8 +28,6 @@
 
 - **Problemas e necessidades identificados:**
 - Falta de controle sobre a entrada e saída de mercadorias, vendas, fechamento de caixa e fluxo de caixa.
-
-
 
 - **Justificativa da escolha:**
 - A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
@@ -86,7 +83,6 @@ ID: 2 | Quantidade: 2 | Valor Unitário: R$ 40,00 | ID Venda: 1002 | ID Fantasia
 
 ### 3.2 Requisitos Não Funcionais
 
-
 - Segurança: Login por perfil de usuário e conformidade com a LGPD.
 - Desempenho: Respostas do sistema de forma rápida.
 - Usabilidade: Tela de caixa simples e aviso visual de estoque baixo.
@@ -103,13 +99,69 @@ Regras Operacionais
 - Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MINIMA.
 - Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos um ITEM_VENDA.
 - Origem do Produto: Toda fantasia deve estar vinculada a um FORNECEDOR cadastrado.
-- Restrições Organizacionais
 - Privacidade (LGPD): Dados do cliente (telefone e endereço) só são armazenados com autorização prévia.
-- Política de Trocas: Alterações ou cancelamentos exigem autorização do Gerente em até 7 dias.
 - Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
 
 ---
 ## 5. Dicionário de Dados Conceitual (Preliminar)
+
+"CLIENTE"
+
+| Atributo | Descrição                | Regra de negócio associada     |
+|NOME      |Nome do cliente           |Deve ser informado no cadastro. |
+|TELEFONE  |Nº de telefone do cliente |Pode ser utilizado para contato.|
+|ENDEREÇO  |Endereço do cliente       |Deve ser informado quando necessário para entrega.|
+
+
+
+"Funcionário"
+
+| Atributo | Descrição                    | Regra de negócio associada               |
+|ID        |ID do funcionário             |Deve ser único.                           |
+|NOME      |Nome do funcionário           |Deve ser informado na contratação.        |
+|CARGO     |Cargo do funcionário          |Deve corresponder à função do funcionário.|
+|TELEFONE  |Nº de telefone do funcionário |Deve ser informado na contratação.        |
+
+
+"Venda"
+
+| Atributo       | Descrição          | Regra de negócio associada                                              |
+|ID_CLIENTE      |Id do cliente.      |Pode ficar sem preenchimento quando o cliente não estiver cadastrado.    |
+|FORMA_PAGAMENTO |Forma utilizada para realizar o pagamento da venda.  |Deve ser informado no registro da venda.|
+|DATA_VENDA      |Data em que a venda foi realizada.                   |Deve ser registrada no momento da venda.|
+
+
+
+"Item venda"
+
+| Atributo | Descrição | Regra de negócio associada |
+|ID_VENDA       |ID da venda    |.|
+|QUANTIDADE     |Nome do cliente    |.|
+|VALOR_UNITÁRIO |Nome do cliente    |.|
+
+
+
+
+| Atributo | Descrição | Regra de negócio associada |
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+
+
+
+
+| Atributo | Descrição | Regra de negócio associada |
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+
+
+
+
+
+
+| *nome do atributo* | *o que ele representa* | *se houver alguma regra (obrigatoriedade, valores possíveis, etc.)* |
+
+
+
+
+
 *(vale 10% — Dimensão Procedimental - Segue o modelo do arquivo 02-03g_Exemplo_Dicionario_Dados.pdf)*
 
 Para cada entidade identificada, liste:
@@ -121,6 +173,11 @@ Para cada entidade identificada, liste:
 *Mantenha o dicionário organizado e padronizado (mesmo formato de tabela para todas as entidades).*
 
 **Atenção à privacidade:** se forem usados exemplos de valores para ilustrar os atributos, esses exemplos devem ser **fictícios** — não utilize dados reais de clientes, fiéis, beneficiários, doadores ou funcionários da organização (nomes, CPFs, contatos etc.), mesmo que tenham sido observados durante a pesquisa de campo. Os exemplos devem apenas ser **coerentes com as operações reais** observadas.
+
+
+
+
+
 
 ---
 
