@@ -113,7 +113,6 @@ Regras Operacionais
 |ENDEREÇO  |Endereço do cliente       |Deve ser informado quando necessário para entrega.|
 
 
-
 "Funcionário"
 
 | Atributo | Descrição                    | Regra de negócio associada               |
