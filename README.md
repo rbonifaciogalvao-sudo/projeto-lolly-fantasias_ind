@@ -166,12 +166,72 @@ Regras Operacionais
 ---
 
 ## 6. Modelagem Conceitual (Entidades, Atributos, Relacionamentos)
-*(vale 7,5% na dimensão conceitual)*
 
+Cliente: representa as pessoas que realizam as compras na loja.
+Funcionário: representa a pessoa responsável pelo atendimento aos clientes e registro de vendas.
+Fantasia: representa os produtos que são comercializados na loja.
+Venda: representa cada venda realizada.
+Item_venda: representa cada fantasia incluída em uma venda, permitindo registrar a quantidade de cada item.
+Fornecedor: representa a pessoa responsável por vender as fantasias para a loja.
+
+---
+
+Cliente: nome, telefone e endereço.
+Funcionário: ID, nome, cargo e telefone.
+Fantasia: ID, gênero, nome, tamanho, categoria, preço de venda, quantidade mínima e quantidade disponível.
+Venda: ID, data e forma de pagamento.
+Item_Venda: ID, quantidade e valor unitário.
+Fornecedor: nome, telefone e CNPJ.
+
+---
+
+Um Cliente pode efetuar várias Vendas. (Cliente 0,N — Venda 0,1)
+Uma Venda pode estar associada a nenhum ou a um Cliente. (Venda 0,1 — Cliente 0,N)
+Uma Venda contém um ou vários Itens_Venda. (Venda 1,N — Item_Venda 1,1)
+Um Item_Venda está relacionado a uma Fantasia.  (Item_Venda 1,1 — Fantasia 0,N)
+Um Funcionário pode realizar várias Vendas. (Funcionário 0,N — Venda 1,1)
+Uma Venda é realizada por um único Funcionário. (Venda 1,1 — Funcionário 0,N)
+Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode estar relacionado a várias Fantasias.  (Fantasia 1,1 — Fornecedor 0,N)
+
+---
+
+Uma venda deve possuir pelo menos um item, garantindo que não exista uma venda sem produto.
+Cada Item_Venda deve estar associado a uma Fantasia, permitindo identificar qual produto foi vendido.
+Cada venda deve estar associada a um Funcionário, permitindo identificar quem realizou o registro.
+Uma Fantasia deve estar associada a um Fornecedor, conforme a organização do cadastro de produtos.
+
+
+
+
+
+
+
+
+
+*(vale 7,5% na dimensão conceitual)*
 - **Entidades reconhecidas:** *liste e justifique brevemente cada uma.*
 - **Atributos e classificações:** *quais atributos pertencem a cada entidade.*
 - **Relacionamentos pertinentes:** *como as entidades se conectam.*
 - **Restrições e políticas organizacionais aplicadas ao modelo.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
