@@ -105,86 +105,59 @@ Regras Operacionais
 ---
 ## 5. Dicionário de Dados Conceitual (Preliminar)
 
-"CLIENTE"
+"Cliente"
 
-| Atributo | Descrição                | Regra de negócio associada     |
-|NOME      |Nome do cliente           |Deve ser informado no cadastro. |
-|TELEFONE  |Nº de telefone do cliente |Pode ser utilizado para contato.|
-|ENDEREÇO  |Endereço do cliente       |Deve ser informado quando necessário para entrega.|
+| Atributo | Descrição                 | Regra de negócio associada     |
+|NOME      |Nome do cliente.           |Deve ser informado no cadastro. |
+|TELEFONE  |Nº de telefone do cliente. |Pode ser utilizado para contato.|
+|ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário para entrega.|
 
 
 "Funcionário"
 
-| Atributo | Descrição                    | Regra de negócio associada               |
-|ID        |ID do funcionário             |Deve ser único.                           |
-|NOME      |Nome do funcionário           |Deve ser informado na contratação.        |
-|CARGO     |Cargo do funcionário          |Deve corresponder à função do funcionário.|
-|TELEFONE  |Nº de telefone do funcionário |Deve ser informado na contratação.        |
+| Atributo | Descrição                     | Regra de negócio associada                         |
+|ID        |ID do funcionário.             |Deve ser atribuído na contratação e deve ser único. |
+|NOME      |Nome do funcionário.           |Deve ser informado na contratação.                  |
+|CARGO     |Cargo do funcionário.          |Deve corresponder à função do funcionário.          |
+|TELEFONE  |Nº de telefone do funcionário. |Deve ser informado na contratação.                  |
 
 
 "Venda"
 
 | Atributo       | Descrição          | Regra de negócio associada                                              |
 |ID_CLIENTE      |Id do cliente.      |Pode ficar sem preenchimento quando o cliente não estiver cadastrado.    |
-|FORMA_PAGAMENTO |Forma utilizada para realizar o pagamento da venda.  |Deve ser informado no registro da venda.|
+|FORMA_PAGAMENTO |Forma utilizada para realizar o pagamento da venda.  |Deve ser informada no registro da venda.|
 |DATA_VENDA      |Data em que a venda foi realizada.                   |Deve ser registrada no momento da venda.|
 
 
 
 "Item venda"
 
-| Atributo      | Descrição                    | Regra de negócio associada |
-|ID_VENDA       |Código identificador da venda |     .|
-|QUANTIDADE     |Quantidade de itens comprados |       .|
-|VALOR_UNITÁRIO |Valor de cada item comprado   |    .|
+| Atributo      | Descrição                     | Regra de negócio associada              |
+|ID_VENDA       |Código identificador da venda. |Deve corresponder a uma venda existente. |
+|QUANTIDADE     |Quantidade de itens comprados. |Deve ser maior que zero.                 |
+|VALOR_UNITÁRIO |Valor de cada item comprado.   |Deve ser maior que zero.               |
 
 
 "Fantasia"
 
-| Atributo | Descrição | Regra de negócio associada |
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+| Atributo             | Descrição | Regra de negócio associada |
+|ID_FANTASIA           |Código identificador da fantasia. |Deve ser informado no cadastro da fantasia e deve ser único.|
+|GÊNERO                |Gênero ao qual a fantasia é destinada. |Aceitar apenas valores definidos, Feminino ou Masculino.|
+|NOME                  |Nome da fantasia.        |Deve ser informado no cadastro. |
+|TAMANHO               |Tamanho da fantasia.     |Deve ser informado no cadastro. |
+|CATEGORIA             |Categoria da fantasia.   |Deve pertencer a uma categoria cadastrada.|
+|VALOR_UNITÁRIO        |Preço de cada item.     |Deve ser maior que zero. |
+|QUANTIDADE_MINIMA |Quantidade mínima que deve ter no estoque. |A quantidade mínima de itens no estoque deve ser superior a 10.|
+|QUANTIDADE_DISPONIVEL |Quantidade disponível no estoque. |Não pode ser negativa. |
 
 
 "Fornecedor"
 
-| Atributo | Descrição | Regra de negócio associada |
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|TELEFONE  |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-|CNPJ      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-
-
-
-
-
-
-| *nome do atributo* | *o que ele representa* | *se houver alguma regra (obrigatoriedade, valores possíveis, etc.)* |
-
-
-
-
-
-*(vale 10% — Dimensão Procedimental - Segue o modelo do arquivo 02-03g_Exemplo_Dicionario_Dados.pdf)*
-
-Para cada entidade identificada, liste:
-
-| Atributo | Descrição | Regra de negócio associada |
-|----------|-----------|------------------------------|
-| *nome do atributo* | *o que ele representa* | *se houver alguma regra (obrigatoriedade, valores possíveis, etc.)* |
-
-*Mantenha o dicionário organizado e padronizado (mesmo formato de tabela para todas as entidades).*
-
-**Atenção à privacidade:** se forem usados exemplos de valores para ilustrar os atributos, esses exemplos devem ser **fictícios** — não utilize dados reais de clientes, fiéis, beneficiários, doadores ou funcionários da organização (nomes, CPFs, contatos etc.), mesmo que tenham sido observados durante a pesquisa de campo. Os exemplos devem apenas ser **coerentes com as operações reais** observadas.
-
-
-
-
+| Atributo | Descrição              | Regra de negócio associada |
+|NOME      |Nome do fornecedor.     |Deve ser informado no cadastro do fornecedor.|
+|TELEFONE  |Telefone do fornecedor. |Deve ser informado no cadastro do fornecedor.|
+|CNPJ      |CNPJ do fornecedor.     |Deve ser único e informado no cadastro do fornecedor.|
 
 
 ---
