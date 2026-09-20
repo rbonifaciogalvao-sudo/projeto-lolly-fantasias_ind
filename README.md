@@ -37,7 +37,7 @@
 - https://maps.app.goo.gl/97rXVKvdabmSye7s7
 - R. Alexandrino Pedroso, 264 - Loja 16 - Canindé, São Paulo - SP, 03031-030, Brasil
 - https://www.instagram.com/lollyfantasias?stkn=MWg5dmlhdmF6ZngyNQ==
-- 11 94708-2631
+- (11) 94708-2631
 
 ---
 
@@ -133,22 +133,31 @@ Regras Operacionais
 
 "Item venda"
 
-| Atributo | Descrição | Regra de negócio associada |
-|ID_VENDA       |ID da venda    |.|
-|QUANTIDADE     |Nome do cliente    |.|
-|VALOR_UNITÁRIO |Nome do cliente    |.|
+| Atributo      | Descrição                    | Regra de negócio associada |
+|ID_VENDA       |Código identificador da venda |     .|
+|QUANTIDADE     |Quantidade de itens comprados |       .|
+|VALOR_UNITÁRIO |Valor de cada item comprado   |    .|
 
 
-
-
-| Atributo | Descrição | Regra de negócio associada |
-|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
-
-
-
+"Fantasia"
 
 | Atributo | Descrição | Regra de negócio associada |
 |NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+
+
+"Fornecedor"
+
+| Atributo | Descrição | Regra de negócio associada |
+|NOME      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|TELEFONE  |Nome do cliente    |Deve ser informado no cadastro do cliente.|
+|CNPJ      |Nome do cliente    |Deve ser informado no cadastro do cliente.|
 
 
 
