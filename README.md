@@ -108,8 +108,11 @@ Regras Operacionais
 "Cliente"
 
 | Atributo | Descrição                 | Regra de negócio associada     |
+
 |NOME      |Nome do cliente.           |Deve ser informado no cadastro. |
+
 |TELEFONE  |Nº de telefone do cliente. |Pode ser utilizado para contato.|
+
 |ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário para entrega.|
 
 
