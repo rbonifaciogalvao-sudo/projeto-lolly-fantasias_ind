@@ -92,7 +92,9 @@ Regras Operacionais
 
 - Venda e Estoque: Vendas só são finalizadas se houver QUANTIDADE DISPONIVEL em estoque.
 - Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MINIMA.
-- Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos um ITEM_VENDA.
+- 
+- """"Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos um ITEM_VENDA.""""
+- 
 - Origem do Produto: Toda fantasia deve estar vinculada a um FORNECEDOR cadastrado.
 - Privacidade (LGPD): Dados do cliente (telefone e endereço) só são armazenados com autorização prévia.
 - Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
