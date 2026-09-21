@@ -134,8 +134,8 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 
 "Item venda"
 
-| Atributo      | Descrição                     | Regra de negócio associada              |
-|ID_VENDA       |Código identificador da venda. |Deve corresponder a uma venda existente. |
+| Atributo      | Descrição                    | Regra de negócio associada              |
+|ID_ITEM_VENDA  |Identificador único do item registrado em uma venda. |Deve corresponder a uma venda existente e deve ser único. |
 |QUANTIDADE     |Quantidade de itens comprados. |Deve ser maior que zero.                 |
 |VALOR_UNITÁRIO |Valor de cada item comprado.   |Deve ser maior que zero.               |
 
@@ -176,7 +176,7 @@ Fornecedor: representa a pessoa responsável por vender as fantasias para a loja
 
 Cliente: nome, telefone e endereço.
 Funcionário: ID, nome, cargo e telefone.
-Fantasia: ID, gênero, nome, tamanho, categoria, preço de venda, quantidade mínima e quantidade disponível.
+Fantasia: ID, gênero, nome, tamanho, categoria, valor unitário, quantidade mínima e quantidade disponível.
 Venda: ID, data e forma de pagamento.
 Item_Venda: ID, quantidade e valor unitário.
 Fornecedor: nome, telefone e CNPJ.
@@ -193,43 +193,11 @@ Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode esta
 
 ---
 
+Um cliente pode estar ou não cadastrado para conseguir realizar uma venda.
 Uma venda deve possuir pelo menos um item, garantindo que não exista uma venda sem produto.
 Cada Item_Venda deve estar associado a uma Fantasia, permitindo identificar qual produto foi vendido.
 Cada venda deve estar associada a um Funcionário, permitindo identificar quem realizou o registro.
 Uma Fantasia deve estar associada a um Fornecedor, conforme a organização do cadastro de produtos.
-
-
-
-
-
-
-
-
-
-*(vale 7,5% na dimensão conceitual)*
-- **Entidades reconhecidas:** *liste e justifique brevemente cada uma.*
-- **Atributos e classificações:** *quais atributos pertencem a cada entidade.*
-- **Relacionamentos pertinentes:** *como as entidades se conectam.*
-- **Restrições e políticas organizacionais aplicadas ao modelo.**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
