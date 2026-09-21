@@ -31,6 +31,8 @@
 - A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
   
 - **Evidências da organização:**
+- <img width="1252" height="123" alt="image" src="https://github.com/user-attachments/assets/4eda3731-07f9-4f20-a531-aca333b033c3" />
+
 - <img width="1600" height="1200" alt="WhatsApp Image 2026-09-15 at 18 51 17" src="https://github.com/user-attachments/assets/5375913f-bdce-4f64-876e-5687abf2521d" />
 - https://maps.app.goo.gl/97rXVKvdabmSye7s7
 - R. Alexandrino Pedroso, 264 - Loja 16 - Canindé, São Paulo - SP, 03031-030, Brasil
