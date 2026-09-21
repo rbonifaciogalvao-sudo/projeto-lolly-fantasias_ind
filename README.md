@@ -1,14 +1,5 @@
 # Entrega 1 — Modelo Conceitual (DER)
 ### Modelagem de um sistema de gestão de informações para uma organização de pequeno porte
-
-> Este arquivo é o esqueleto do **README.md** do repositório GitHub do seu grupo.
-> Preencha cada seção abaixo. Não apague os títulos — apenas substitua as instruções em *itálico* pelo conteúdo do seu projeto.
-> O **DER** é anexado separadamente ao repositório (em imagem), mas sua justificativa entra neste README.
->
-> **A organização escolhida pode ser de qualquer natureza:** empresa com fins lucrativos (livraria, lanchonete, pet shop), ONG, associação comunitária, cooperativa, instituições religiosas/comunitárias como igrejas, terreiros de religiões de matriz africana (candomblé, umbanda) ou outras. O que muda de um tipo para outro são os processos e as regras específicas — a estrutura do trabalho (levantamento de requisitos, modelagem conceitual, DER) é a mesma para todas. Termos como "empresa" e "negócio" usados abaixo devem ser lidos de forma ampla, no sentido técnico de modelagem de dados (ex.: "regras de negócio" = regras de funcionamento da organização, seja ela comercial, religiosa ou social).
->
-> **Importante:** a organização precisa **existir de fato** — não é permitido inventar uma organização fictícia. O levantamento de requisitos e regras de negócio deve ser feito por meio de **pesquisa de campo na própria organização** (visitas, entrevistas com responsáveis, observação dos processos reais), então o grupo só deve escolher uma organização à qual **realmente tenha acesso**. Ao escolher, tomem cuidado com o porte: **nem tão pequena** que não gere dados suficiente para o trabalho (poucos processos, poucas entidades), **nem tão grande/complexa** que fique inviável de modelar nesta primeira etapa do curso.
-
 ---
 
 ## Metadados
@@ -73,10 +64,7 @@ ID Fantasia: 502 | Nome: Capa de Vampiro Clássica | Gênero: Masculino | Tamanh
 ID: 1001 | Data Venda: 15/10/2026 | Forma Pagamento: Cartão de Crédito | ID Cliente: 1 | ID Funcionário: 101
 ID: 1002 | Data Venda: 16/10/2026 | Forma Pagamento: PIX | ID Cliente: 2 | ID Funcionário: 101
 
-- ITEM_VENDA
-ID: 1 | Quantidade: 1 | Valor Unitário: R$ 20,00 | ID Venda: 1001 | ID Fantasia: 501
-ID: 2 | Quantidade: 2 | Valor Unitário: R$ 40,00 | ID Venda: 1002 | ID Fantasia: 502
-
+  
 <img width="3619" height="276" alt="Fluxograma" src="https://github.com/user-attachments/assets/ef0c548a-1762-4364-ac81-30f385c6caba" />
 
 ---
@@ -139,14 +127,6 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 
 
 
-"Item venda"
-
-| Atributo      | Descrição                    | Regra de negócio associada              |
-|ID_ITEM_VENDA  |Identificador único do item registrado em uma venda. |Deve corresponder a uma venda existente e deve ser único. |
-|QUANTIDADE     |Quantidade de itens comprados. |Deve ser maior que zero.                 |
-|VALOR_UNITÁRIO |Valor de cada item comprado.   |Deve ser maior que zero.               |
-
-
 "Fantasia"
 
 | Atributo             | Descrição | Regra de negócio associada |
@@ -176,7 +156,6 @@ Cliente: representa as pessoas que realizam as compras na loja.
 Funcionário: representa a pessoa responsável pelo atendimento aos clientes e registro de vendas.
 Fantasia: representa os produtos que são comercializados na loja.
 Venda: representa cada venda realizada.
-Item_venda: representa cada fantasia incluída em uma venda, permitindo registrar a quantidade de cada item.
 Fornecedor: representa a pessoa responsável por vender as fantasias para a loja.
 
 ---
@@ -185,15 +164,12 @@ Cliente: nome, telefone e endereço.
 Funcionário: ID, nome, cargo e telefone.
 Fantasia: ID, gênero, nome, tamanho, categoria, valor unitário, quantidade mínima e quantidade disponível.
 Venda: ID, data e forma de pagamento.
-Item_Venda: ID, quantidade e valor unitário.
 Fornecedor: nome, telefone e CNPJ.
 
 ---
 
 Um Cliente pode efetuar várias Vendas. (Cliente 0,N — Venda 0,1)
 Uma Venda pode estar associada a nenhum ou a um Cliente. (Venda 0,1 — Cliente 0,N)
-Uma Venda contém um ou vários Itens_Venda. (Venda 1,N — Item_Venda 1,1)
-Um Item_Venda está relacionado a uma Fantasia.  (Item_Venda 1,1 — Fantasia 0,N)
 Um Funcionário pode realizar várias Vendas. (Funcionário 0,N — Venda 1,1)
 Uma Venda é realizada por um único Funcionário. (Venda 1,1 — Funcionário 0,N)
 Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode estar relacionado a várias Fantasias.  (Fantasia 1,1 — Fornecedor 0,N)
@@ -202,7 +178,6 @@ Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode esta
 
 Um cliente pode estar ou não cadastrado para conseguir realizar uma venda.
 Uma venda deve possuir pelo menos um item, garantindo que não exista uma venda sem produto.
-Cada Item_Venda deve estar associado a uma Fantasia, permitindo identificar qual produto foi vendido.
 Cada venda deve estar associada a um Funcionário, permitindo identificar quem realizou o registro.
 Uma Fantasia deve estar associada a um Fornecedor, conforme a organização do cadastro de produtos.
 
