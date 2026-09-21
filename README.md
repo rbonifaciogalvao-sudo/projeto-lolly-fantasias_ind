@@ -91,10 +91,8 @@ ID: 1002 | Data Venda: 16/10/2026 | Forma Pagamento: PIX | ID Cliente: 2 | ID Fu
 Regras Operacionais
 
 - Venda e Estoque: Vendas só são finalizadas se houver QUANTIDADE DISPONIVEL em estoque.
-- Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MINIMA.
-- 
-- """"Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos um ITEM_VENDA.""""
-- 
+- Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MÍNIMA.
+- Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos uma VENDA.
 - Origem do Produto: Toda fantasia deve estar vinculada a um FORNECEDOR cadastrado.
 - Privacidade (LGPD): Dados do cliente (telefone e endereço) só são armazenados com autorização prévia.
 - Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
