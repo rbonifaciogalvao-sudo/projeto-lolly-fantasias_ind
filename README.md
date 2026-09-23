@@ -154,34 +154,34 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 
 ## 6. Modelagem Conceitual (Entidades, Atributos, Relacionamentos)
 
-Cliente: representa as pessoas que realizam as compras na loja.
-Funcionário: representa a pessoa responsável pelo atendimento aos clientes e registro de vendas.
-Fantasia: representa os produtos que são comercializados na loja.
-Venda: representa cada venda realizada.
-Fornecedor: representa a pessoa responsável por vender as fantasias para a loja.
+- Cliente: representa as pessoas que realizam as compras na loja.
+- Funcionário: representa a pessoa responsável pelo atendimento aos clientes e registro de vendas.
+- Fantasia: representa os produtos que são comercializados na loja.
+- Venda: representa cada venda realizada.
+- Fornecedor: representa a pessoa responsável por vender as fantasias para a loja.
 
 ---
 
-Cliente: nome, telefone e endereço.
-Funcionário: ID, nome, cargo e telefone.
-Fantasia: ID, gênero, nome, tamanho, categoria, valor unitário, quantidade mínima e quantidade disponível.
-Venda: ID, data e forma de pagamento.
-Fornecedor: nome, telefone e CNPJ.
+- Cliente: nome, telefone e endereço.
+- Funcionário: ID, nome, cargo e telefone.
+- Fantasia: ID, gênero, nome, tamanho, categoria, valor unitário, quantidade mínima e quantidade disponível.
+- Venda: ID, data e forma de pagamento.
+- Fornecedor: nome, telefone e CNPJ.
 
 ---
 
-Um Cliente pode efetuar várias Vendas. (Cliente 0,N — Venda 0,1) <br>
-Uma Venda pode estar associada a nenhum ou a um Cliente. (Venda 0,1 — Cliente 0,N)
-Um Funcionário pode realizar várias Vendas. (Funcionário 0,N — Venda 1,1)
-Uma Venda é realizada por um único Funcionário. (Venda 1,1 — Funcionário 0,N)
-Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode estar relacionado a várias Fantasias.  (Fantasia 1,1 — Fornecedor 0,N)
+- Um Cliente pode efetuar várias Vendas. (Cliente 0,N — Venda 0,1) 
+- Uma Venda pode estar associada a nenhum ou a um Cliente. (Venda 0,1 — Cliente 0,N)
+- Um Funcionário pode realizar várias Vendas. (Funcionário 0,N — Venda 1,1)
+- Uma Venda é realizada por um único Funcionário. (Venda 1,1 — Funcionário 0,N)
+- Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode estar relacionado a várias Fantasias.  (Fantasia 1,1 — Fornecedor 0,N)
 
 ---
 
-Um cliente pode estar ou não cadastrado para conseguir realizar uma venda.
-Uma venda deve possuir pelo menos um item, garantindo que não exista uma venda sem produto.
-Cada venda deve estar associada a um Funcionário, permitindo identificar quem realizou o registro.
-Uma Fantasia deve estar associada a um Fornecedor, conforme a organização do cadastro de produtos.
+- Um cliente pode estar ou não cadastrado para conseguir realizar uma venda.
+- Uma venda deve possuir pelo menos um item, garantindo que não exista uma venda sem produto.
+- Cada venda deve estar associada a um Funcionário, permitindo identificar quem realizou o registro.
+- Uma Fantasia deve estar associada a um Fornecedor, conforme a organização do cadastro de produtos.
 
 ---
 
