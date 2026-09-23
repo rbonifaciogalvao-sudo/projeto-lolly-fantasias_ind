@@ -75,6 +75,7 @@ ID: 1002 | Data Venda: 16/10/2026 | Forma Pagamento: PIX | ID Cliente: 2 | ID Fu
 
 
 ### 3.1 Requisitos Funcionais
+""""""AUMENTAR""""""""""
 - O sistema deve permitir o controle da entrada e saída de mercadorias, registrar as vendas, realizar o fechamento de caixa e acompanhar o fluxo de caixa.
 
 
@@ -186,6 +187,11 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 ---
 
 ## 7. Diagrama Entidade-Relacionamento (DER)
+
+![Uploading image.png…]()
+
+
+
 *(vale 20% — é o item de maior peso da entrega)*
 
 - Anexe o DER (em imagem).
