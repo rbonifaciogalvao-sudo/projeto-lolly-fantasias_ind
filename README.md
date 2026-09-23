@@ -170,7 +170,7 @@ Fornecedor: nome, telefone e CNPJ.
 
 ---
 
-Um Cliente pode efetuar várias Vendas. (Cliente 0,N — Venda 0,1)
+Um Cliente pode efetuar várias Vendas. (Cliente 0,N — Venda 0,1) <br>
 Uma Venda pode estar associada a nenhum ou a um Cliente. (Venda 0,1 — Cliente 0,N)
 Um Funcionário pode realizar várias Vendas. (Funcionário 0,N — Venda 1,1)
 Uma Venda é realizada por um único Funcionário. (Venda 1,1 — Funcionário 0,N)
