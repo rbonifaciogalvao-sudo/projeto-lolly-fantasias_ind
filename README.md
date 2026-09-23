@@ -205,6 +205,11 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 ---
 
 ## 8. Justificativa Técnica
+- O nosso grupo escolheu essas entidades, atributos, relacionamentos e cardinalidades porque com base na pesquisa feita, eles representam 
+- 
+
+
+
 *(vale 7,5% — sozinho, é o subcritério de maior peso dentro da Dimensão Conceitual)*
 
 *Explique e defenda as decisões de abstração e modelagem tomadas: por que essas entidades, esses atributos, esses relacionamentos e essas cardinalidades — e não outras alternativas possíveis?*
