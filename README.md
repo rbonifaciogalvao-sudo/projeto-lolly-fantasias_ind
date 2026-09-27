@@ -171,9 +171,9 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 
 ---
 
-- Um Cliente pode efetuar várias Vendas. (Cliente 0,N — Venda 0,1) 
+- Um Cliente pode efetuar nenhuma ou várias Vendas. (Cliente 0,N — Venda 0,1) 
 - Uma Venda pode estar associada a nenhum ou a um Cliente. (Venda 0,1 — Cliente 0,N)
-- Um Funcionário pode realizar várias Vendas. (Funcionário 0,N — Venda 1,1)
+- Um Funcionário pode realizar nenhuma ou várias Vendas. (Funcionário 0,N — Venda 1,1)
 - Uma Venda é realizada por um único Funcionário. (Venda 1,1 — Funcionário 0,N)
 - Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode estar relacionado a várias Fantasias.  (Fantasia 1,1 — Fornecedor 0,N)
 
