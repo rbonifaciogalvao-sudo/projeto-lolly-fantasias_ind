@@ -164,6 +164,8 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 - Um Funcionário pode realizar nenhuma ou várias Vendas. (Funcionário 0,N — Venda 1,1)
 - Uma Venda é realizada por um único Funcionário. (Venda 1,1 — Funcionário 0,N)
 - Uma Fantasia está relacionada a um Fornecedor, enquanto um Fornecedor pode estar relacionado a várias Fantasias.  (Fantasia 1,1 — Fornecedor 0,N)
+- Uma Venda deve conter uma ou várias Fantasias. (Venda 1,N — Fantasia 1,N)
+- Uma Fantasia pode estar presente em uma ou várias Vendas. (Fantasia 1,N — Venda 1,N)
 
 ---
 
