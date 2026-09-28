@@ -180,16 +180,6 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 <img width="1112" height="671" alt="image" src="https://github.com/user-attachments/assets/c76557de-5dd6-46ee-aad2-10640ae79119" />
 
 
-*(vale 20% — é o item de maior peso da entrega)*
-
-- Anexe o DER (em imagem).
-- O diagrama deve representar corretamente:
-  - Entidades
-  - Atributos
-  - Relacionamentos
-  - **Cardinalidades**
-- O modelo deve ser **consistente** e já demonstrar potencial de **escalabilidade e integração** (pensando nas próximas etapas do projeto).
-
 ---
 
 ## 8. Justificativa Técnica
