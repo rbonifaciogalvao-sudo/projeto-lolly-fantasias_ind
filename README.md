@@ -177,7 +177,7 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 ## 7. Diagrama Entidade-Relacionamento (DER)
 
 
-<img width="1546" height="862" alt="image" src="https://github.com/user-attachments/assets/8589e31f-a667-47c7-8c0b-911b28c0775e" />
+<img width="1112" height="671" alt="image" src="https://github.com/user-attachments/assets/c76557de-5dd6-46ee-aad2-10640ae79119" />
 
 
 *(vale 20% — é o item de maior peso da entrega)*
