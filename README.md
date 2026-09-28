@@ -10,12 +10,6 @@
 - Yago Lima de Queiroz - 48140597
 
 
-| Nome | Idade | Cidade |
-| --- | --- | --- |
-| Ana | 25 | São Paulo |
-| João | 30 | Rio de Janeiro |
-
-
 ## 1. Caracterização da Organização
 
 - **Nome e natureza da organização:**
@@ -42,29 +36,19 @@
 ---
 
 ## 2. Processos de Negócio
+## 2. Processos de Negócio
+*(vale 10% — Dimensão Procedimental)*
+
+- **Principais processos mapeados:** *ex.: cadastro de clientes/beneficiários/fiéis, controle de estoque ou doações, vendas ou arrecadação, emissão de pedidos ou solicitações, entregas ou distribuição, organização de eventos/rituais/mutirões.*
+- **Fluxogramas:** (Opcional) *represente visualmente pelo menos os processos-chave (imagens anexadas). Deve ficar claro o fluxo de cada processo e como eles se integram entre si.*
+
+
+
 
 
 - **Principais processos mapeados:**
 
-- CLIENTE
-ID: 1 | Nome: Mariana Souza | Telefone: (11) 98765-4321 | Endereço: Av. Paulista, 1000 - São Paulo, SP
-ID: 2 | Nome: Carlos Eduardo | Telefone: (21) 99876-5432 | Endereço: Rua das Flores, 45 - Rio de Janeiro, RJ
 
-- FUNCIONÁRIO
-ID: 101 | Nome: Beatriz Lima | Cargo: Dona | Telefone: (11) 97654-3210
-ID: 102 | Nome: Lucas Mendes | Cargo: Vendedor | Telefone: (11) 96543-2109
-
-- FORNECEDOR
-CNPJ: 12.345.678/0001-90 | Nome: Magia & Fantasias Ltda | Telefone: (11) 3333-4444
-CNPJ: 98.765.432/0001-10 | Nome: Distribuidora Cosplay Brasil | Telefone: (41) 3222-1111
-
-- FANTASIA
-ID Fantasia: 501 | Nome: Fantasia Pirata dos Mares | Gênero: Unissex | Tamanho: M | Categoria: Adulto / Festas | Preço Venda: R$ 180,00 | Qtd Mínima: 2 | Qtd Disponível: 8 | CNPJ Fornecedor: 12.345.678/0001-90
-ID Fantasia: 502 | Nome: Capa de Vampiro Clássica | Gênero: Masculino | Tamanho: G | Categoria: Halloween | Preço Venda: R$ 95,00 | Qtd Mínima: 5 | Qtd Disponível: 15 | CNPJ Fornecedor: 98.765.432/0001-10
-
-- VENDA
-ID: 1001 | Data Venda: 15/10/2026 | Forma Pagamento: Cartão de Crédito | ID Cliente: 1 | ID Funcionário: 101
-ID: 1002 | Data Venda: 16/10/2026 | Forma Pagamento: PIX | ID Cliente: 2 | ID Funcionário: 101
 
   
 <img width="3619" height="276" alt="Fluxograma" src="https://github.com/user-attachments/assets/ef0c548a-1762-4364-ac81-30f385c6caba" />
@@ -72,11 +56,16 @@ ID: 1002 | Data Venda: 16/10/2026 | Forma Pagamento: PIX | ID Cliente: 2 | ID Fu
 ---
 
 ## 3. Requisitos do Sistema
-
-
 ### 3.1 Requisitos Funcionais
-""""""AUMENTAR""""""""""
-- O sistema deve permitir o controle da entrada e saída de mercadorias, registrar as vendas, realizar o fechamento de caixa e acompanhar o fluxo de caixa.
+
+O sistema deve permitir registrar a entrada de novas fantasias no estoque e controlar a saída das mercadorias quando uma venda for realizada. Dessa forma, será possível acompanhar a quantidade disponível de cada fantasia e identificar quando o estoque estiver baixo.
+O sistema deve permitir registrar as vendas realizadas, informando as fantasias vendidas, suas respectivas quantidades, os valores e, quando necessário, o cliente relacionado à venda. O registro deve permitir consultar as vendas realizadas posteriormente.
+O sistema deve permitir realizar o fechamento do caixa ao final do período, registrando e conferindo os valores movimentados durante o atendimento. O objetivo é possibilitar a conferência dos valores recebidos por meio das vendas.
+O sistema deve permitir acompanhar as movimentações financeiras relacionadas às vendas, possibilitando visualizar os valores recebidos e auxiliar no controle financeiro da loja.
+
+
+
+
 
 
 ### 3.2 Requisitos Não Funcionais
@@ -101,7 +90,9 @@ Regras Operacionais
 - Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
 
 ---
-## 5. Dicionário de Dados Conceitual (Preliminar)
+## 5. Dicionário de Dados Conceitual (Preliminar) 
+
+'''''''''''''''HTML''''''''''''''''
 
 "Cliente"
 
