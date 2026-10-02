@@ -26,7 +26,6 @@
   
 - **Evidências da organização:**
 - <img width="1600" height="900" alt="WhatsApp Image 2026-10-02 at 16 30 11" src="https://github.com/user-attachments/assets/ccd48c83-9b6d-43a6-b547-eedf4791bfdd" />
-- <img width="1600" height="1200" alt="WhatsApp Image 2026-09-15 at 18 51 17" src="https://github.com/user-attachments/assets/5375913f-bdce-4f64-876e-5687abf2521d" />
 - https://maps.app.goo.gl/97rXVKvdabmSye7s7
 - R. Alexandrino Pedroso, 264 - Loja 16 - Canindé, São Paulo - SP, 03031-030, Brasil
 - https://www.instagram.com/lollyfantasias?stkn=MWg5dmlhdmF6ZngyNQ==
