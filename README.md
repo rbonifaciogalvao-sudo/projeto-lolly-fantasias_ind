@@ -190,16 +190,26 @@ ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário p
 ---
 
 ## 8. Justificativa Técnica
-- O nosso grupo escolheu essas entidades, atributos, relacionamentos e cardinalidades porque com base na pesquisa feita, eles representam 
-- 
+As entidades CLIENTE, FUNCIONÁRIO, VENDA, FANTASIA e FORNECEDOR foram escolhidas por representarem os principais elementos identificados durante a entrevista realizada com a loja. A definição das entidades buscou representar os aspectos mais relevantes do funcionamento da organização e possibilitar um maior controle das informações.
 
+Os atributos da entidade FANTASIA foram definidos com base na forma como a própria loja identifica e organiza suas fantasias. Dessa forma, foram considerados dados como gênero, nome, tamanho, categoria, valor e quantidade disponível. Também foram adicionados identificadores (ID) às entidades para garantir que cada registro pudesse ser identificado de forma única, evitando ambiguidades e facilitando os relacionamentos entre as entidades.
 
+A entidade CLIENTE foi mantida no modelo mesmo que a loja atualmente não possua um cadastro de clientes, pois, no sistema proposto, seu registro possibilitaria relacionar vendas aos respectivos clientes. Isso pode contribuir para o controle das operações, identificação de possíveis irregularidades e análise das vendas, permitindo observar quais produtos apresentam maior movimentação e retorno para a loja.
 
-*(vale 7,5% — sozinho, é o subcritério de maior peso dentro da Dimensão Conceitual)*
+A entidade FUNCIONÁRIO foi incluída porque o funcionário é responsável pela realização das vendas e pelo atendimento na loja. O relacionamento entre FUNCIONÁRIO e VENDA permite identificar quem realizou cada operação, facilitando o controle das vendas mesmo em situações de troca ou desligamento de funcionários.
 
-*Explique e defenda as decisões de abstração e modelagem tomadas: por que essas entidades, esses atributos, esses relacionamentos e essas cardinalidades — e não outras alternativas possíveis?*
+A entidade VENDA foi criada para possibilitar um controle mais sólido e específico das vendas realizadas pela loja, registrando informações importantes de cada operação. Já a entidade FORNECEDOR foi incluída para identificar a origem das fantasias adquiridas pela loja. Dessa forma, caso uma fantasia apresente algum problema, como falta de itens ou defeito, será possível identificar o fornecedor responsável.
 
----
+Em relação às cardinalidades, CLIENTE e VENDA foram relacionados de forma que uma venda possa ocorrer sem um cliente cadastrado ou estar relacionada a um único cliente cadastrado, pois o cadastro de clientes é opcional. FUNCIONÁRIO e VENDA foram relacionados considerando que cada venda é realizada por um funcionário, enquanto um mesmo funcionário pode realizar várias vendas.
+
+A relação entre VENDA e FANTASIA considera que uma venda pode conter uma ou várias fantasias, pois a loja pode realizar vendas tanto no varejo quanto no atacado. Da mesma forma, uma mesma fantasia pode estar presente em várias vendas, pois as fantasias não são itens únicos, permitindo que diferentes clientes adquiram o mesmo modelo e tamanho.
+
+A relação entre FANTASIA e FORNECEDOR permite que uma fantasia esteja relacionada a vários fornecedores e que um fornecedor forneça várias fantasias. Essa decisão considera que diferentes fornecedores podem oferecer modelos semelhantes ou iguais, inclusive com preços diferentes.
+
+Durante a modelagem, a entidade ITEM_VENDA foi retirada porque seus atributos representavam informações que poderiam ser diretamente associadas à entidade FANTASIA. Dessa forma, esses atributos foram incorporados à FANTASIA, evitando informações duplicadas e tornando o modelo mais adequado à realidade observada na loja.
+
+Assim, as decisões de abstração e modelagem foram tomadas a partir das informações obtidas na entrevista e das necessidades identificadas para o sistema proposto, buscando representar os principais elementos da loja, evitar duplicidade de informações e estabelecer relacionamentos que correspondam ao funcionamento das vendas, dos produtos, dos funcionários e dos fornecedores.
+
 
 ## 9. Uso de Inteligência Artificial
 
