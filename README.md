@@ -73,7 +73,7 @@ O sistema deve permitir acompanhar as movimentações financeiras relacionadas �
 ### 3.2 Requisitos Não Funcionais
 
 - Segurança: Login por perfil de usuário e conformidade com a LGPD.
-- Desempenho: Respostas do sistema de forma rápida.
+- Desempenho: O sistema deverá apresentar respostas às operações realizadas pelo usuário em até 3 segundos.
 - Usabilidade: Tela de caixa simples e aviso visual de estoque baixo.
 - Disponibilidade: Operacional durante todo o horário comercial.
 - Confiabilidade: Cancelamento de vendas interrompidas para proteger o estoque.
