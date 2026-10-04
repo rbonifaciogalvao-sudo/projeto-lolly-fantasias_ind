@@ -38,19 +38,6 @@ Atendimento e venda de fantasias: o cliente solicita uma ou mais fantasias, o fu
 Verificação de disponibilidade: quando a quantidade de fantasias disponível na loja não é suficiente para atender à solicitação do cliente, o funcionário consulta o estoque para verificar e buscar as unidades restantes.
 Abastecimento de fantasias: a loja realiza o recebimento de fantasias provenientes de fornecedores para manter os produtos disponíveis para venda.
 
-
-
-*(vale 10% — Dimensão Procedimental)*
-
-- **Principais processos mapeados:** *ex.: cadastro de clientes/beneficiários/fiéis, controle de estoque ou doações, vendas ou arrecadação, emissão de pedidos ou solicitações, entregas ou distribuição, organização de eventos/rituais/mutirões.*
-
-
-
-
-
-
-
-
 - **Fluxogramas:** 
 - <img width="1252" height="123" alt="image" src="https://github.com/user-attachments/assets/4eda3731-07f9-4f20-a531-aca333b033c3" />
 
