@@ -123,7 +123,7 @@ Regras Operacionais
 
 
 
-<img width="1112" height="671" alt="image" src="https://github.com/user-attachments/assets/c76557de-5dd6-46ee-aad2-10640ae79119" />
+![Uploading Captura de tela 2026-10-04 160718.png…]()
 
 
 ---
