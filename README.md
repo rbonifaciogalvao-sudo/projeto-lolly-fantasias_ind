@@ -123,7 +123,7 @@ Regras Operacionais
 
 
 
-![Uploading Captura de tela 2026-10-04 160718.png…]()
+<img width="1120" height="661" alt="Captura de tela 2026-10-04 160718" src="https://github.com/user-attachments/assets/a5a7ab7c-21fb-4d87-aea7-6c82ae7e76ad" />
 
 
 ---
