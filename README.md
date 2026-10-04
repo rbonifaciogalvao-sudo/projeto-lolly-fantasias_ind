@@ -122,6 +122,7 @@ Regras Operacionais
 ## 7. Diagrama Entidade-Relacionamento (DER)
 
 
+
 <img width="1112" height="671" alt="image" src="https://github.com/user-attachments/assets/c76557de-5dd6-46ee-aad2-10640ae79119" />
 
 
