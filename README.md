@@ -15,10 +15,10 @@
 -Lolly Fantasias. Loja especializada na venda de fantasias infantis e adultas.
 
 - **Contexto e porte:**
-- Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e 2 pessoas trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias.
+- Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e 2 pessoas trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias. A organização trabalha com diferentes categorias de fantasias, como Halloween, super-heróis, profissões e princesas.
 
 - **Problemas e necessidades identificados:**
-- Falta de controle sobre a entrada e saída de mercadorias, vendas, fechamento de caixa e fluxo de caixa.
+- A Lolly Fantasias apresenta dificuldades relacionadas ao controle e à organização das informações de suas atividades. Atualmente, não existe um controle sistematizado da entrada e saída de fantasias, das vendas realizadas, do fechamento de caixa e do fluxo de caixa. Também não há um controle adequado que permita acompanhar de forma organizada a quantidade de fantasias disponíveis em estoque. Essa falta de controle pode dificultar o acompanhamento das movimentações da loja e a consulta das informações necessárias para a realização das atividades. Dessa forma, identifica-se a necessidade de um sistema que permita organizar e centralizar essas informações, facilitando o controle do estoque, das vendas e das movimentações financeiras da organização.
 
 - **Justificativa da escolha:**
 - A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
