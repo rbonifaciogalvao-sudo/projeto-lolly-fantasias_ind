@@ -1,6 +1,5 @@
 # Entrega 1 — Modelo Conceitual (DER)
 ---
-http://127.0.0.1:5500/dicionario.html
 ## Metadados
 
 - **Nomes dos alunos e RGM**
@@ -79,7 +78,7 @@ Regras Operacionais
 ---
 ## 5. Dicionário de Dados Conceitual (Preliminar) 
 
-'''''''''''''''HTML''''''''''''''''
+http://127.0.0.1:5500/dicionario.html
 
 ---
 
