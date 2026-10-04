@@ -82,54 +82,6 @@ Regras Operacionais
 
 '''''''''''''''HTML''''''''''''''''
 
-"Cliente"
-
- Atributo | Descrição                 | Regra de negócio associada     |
-
-NOME      |Nome do cliente.           |Deve ser informado no cadastro. |
-TELEFONE  |Nº de telefone do cliente. |Pode ser utilizado para contato.|
-ENDEREÇO  |Endereço do cliente.       |Deve ser informado quando necessário para entrega.|
-
-
-"Funcionário"
-
-| Atributo | Descrição                     | Regra de negócio associada                         |
-|ID        |ID do funcionário.             |Deve ser atribuído na contratação e deve ser único. |
-|NOME      |Nome do funcionário.           |Deve ser informado na contratação.                  |
-|CARGO     |Cargo do funcionário.          |Deve corresponder à função do funcionário.          |
-|TELEFONE  |Nº de telefone do funcionário. |Deve ser informado na contratação.                  |
-
-
-"Venda"
-
-| Atributo       | Descrição          | Regra de negócio associada                                              |
-|ID_CLIENTE      |Id do cliente.      |Pode ficar sem preenchimento quando o cliente não estiver cadastrado.    |
-|FORMA_PAGAMENTO |Forma utilizada para realizar o pagamento da venda.  |Deve ser informada no registro da venda.|
-|DATA_VENDA      |Data em que a venda foi realizada.                   |Deve ser registrada no momento da venda.|
-
-
-
-"Fantasia"
-
-| Atributo             | Descrição | Regra de negócio associada |
-|ID_FANTASIA           |Código identificador da fantasia. |Deve ser informado no cadastro da fantasia e deve ser único.|
-|GÊNERO                |Gênero ao qual a fantasia é destinada. |Aceitar apenas valores definidos, Feminino ou Masculino.|
-|NOME                  |Nome da fantasia.        |Deve ser informado no cadastro. |
-|TAMANHO               |Tamanho da fantasia.     |Deve ser informado no cadastro. |
-|CATEGORIA             |Categoria da fantasia.   |Deve pertencer a uma categoria cadastrada.|
-|VALOR_UNITÁRIO        |Preço de cada item.     |Deve ser maior que zero. |
-|QUANTIDADE_MINIMA |Quantidade mínima que deve ter no estoque. |A quantidade mínima de itens no estoque deve ser superior a 10.|
-|QUANTIDADE_DISPONIVEL |Quantidade disponível no estoque. |Não pode ser negativa. |
-
-
-"Fornecedor"
-
-| Atributo | Descrição              | Regra de negócio associada |
-|NOME      |Nome do fornecedor.     |Deve ser informado no cadastro do fornecedor.|
-|TELEFONE  |Telefone do fornecedor. |Deve ser informado no cadastro do fornecedor.|
-|CNPJ      |CNPJ do fornecedor.     |Deve ser único e informado no cadastro do fornecedor.|
-
-
 ---
 
 ## 6. Modelagem Conceitual (Entidades, Atributos, Relacionamentos)
