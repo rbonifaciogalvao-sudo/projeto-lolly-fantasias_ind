@@ -12,7 +12,7 @@
 ## 1. Caracterização da Organização
 
 - **Nome e natureza da organização:**
--Lolly Fantasias. Loja especializada na venda de fantasias infantis e adultas.
+- Lolly Fantasias. Loja especializada na venda de fantasias infantis e adultas.
 
 - **Contexto e porte:**
 - Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e 2 pessoas trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias. A organização trabalha com diferentes categorias de fantasias, como Halloween, super-heróis, profissões e princesas.
