@@ -15,10 +15,10 @@
 - Lolly Fantasias. Loja especializada na venda de fantasias infantis e adultas.
 
 - **Contexto e porte:**
-- Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e 2 pessoas trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias. A organização trabalha com diferentes categorias de fantasias, como Halloween, super-heróis, profissões e princesas.
+- Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e uma pessoa trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias. A organização trabalha com diferentes categorias de fantasias, como Halloween, super-heróis, profissões e princesas.
 
 - **Problemas e necessidades identificados:**
-- A Lolly Fantasias apresenta dificuldades relacionadas ao controle e à organização das informações de suas atividades. Atualmente, não existe um controle sistematizado da entrada e saída de fantasias, das vendas realizadas, do fechamento de caixa e do fluxo de caixa. Também não há um controle adequado que permita acompanhar de forma organizada a quantidade de fantasias disponíveis em estoque. Essa falta de controle pode dificultar o acompanhamento das movimentações da loja e a consulta das informações necessárias para a realização das atividades. Dessa forma, identifica-se a necessidade de um sistema que permita organizar e centralizar essas informações, facilitando o controle do estoque, das vendas e das movimentações financeiras da organização.
+- A Lolly Fantasias apresenta dificuldades relacionadas ao controle e à organização das informações de suas atividades. Atualmente, não existe um controle sistematizado da entrada e saída de fantasias, das vendas realizadas, do fechamento de caixa e do fluxo de caixa. Também não existe um controle adequado que permita acompanhar de forma organizada a quantidade de fantasias disponíveis em estoque. Essa falta de controle pode dificultar o acompanhamento das movimentações da loja e a consulta das informações necessárias para a realização das atividades. Dessa forma, identifica-se a necessidade de um sistema que permita organizar e centralizar essas informações, facilitando o controle do estoque, das vendas e das movimentações financeiras da organização.
 
 - **Justificativa da escolha:**
 - A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
@@ -32,11 +32,13 @@
 
 ---
 
+
 ## 2. Processos de Negócio
 
 Atendimento e venda de fantasias: o cliente solicita uma ou mais fantasias, o funcionário verifica a disponibilidade, entrega as fantasias disponíveis e, após o pagamento, a venda é finalizada.
-Verificação de disponibilidade: quando a quantidade de fantasias disponível na loja não é suficiente para atender à solicitação do cliente, o funcionário consulta o estoque para verificar e buscar as unidades restantes.
-Abastecimento de fantasias: a loja realiza o recebimento de fantasias provenientes de fornecedores para manter os produtos disponíveis para venda.
+Quando a quantidade de fantasias disponível na loja não é suficiente para atender à solicitação do cliente, o funcionário verifica no estoque para saber se há a quantidade desejada pelo cliente e, busca as unidades restantes.
+Para manter as fantasias disponíveis para venda, a loja recebe novas fantasias dos fornecedores. Esse recebimento ajuda a repor os produtos e manter o estoque abastecido para atender aos clientes.
+
 
 - **Fluxogramas:** 
 - <img width="1252" height="123" alt="image" src="https://github.com/user-attachments/assets/4eda3731-07f9-4f20-a531-aca333b033c3" />
@@ -47,22 +49,21 @@ Abastecimento de fantasias: a loja realiza o recebimento de fantasias provenient
 ### 3.1 Requisitos Funcionais
 
 O sistema deve permitir registrar a entrada de novas fantasias no estoque e controlar a saída das mercadorias quando uma venda for realizada. Dessa forma, será possível acompanhar a quantidade disponível de cada fantasia e identificar quando o estoque estiver baixo.
-O sistema deve permitir registrar as vendas realizadas, informando as fantasias vendidas, suas respectivas quantidades, os valores e, quando necessário, o cliente relacionado à venda. O registro deve permitir consultar as vendas realizadas posteriormente.
+O sistema deve permitir registrar as vendas realizadas, informando as fantasias vendidas, a quantidade, os valores, data e, quando necessário, o cliente relacionado à venda. O registro deve permitir consultar as vendas realizadas posteriormente.
 O sistema deve permitir realizar o fechamento do caixa ao final do período, registrando e conferindo os valores movimentados durante o atendimento. O objetivo é possibilitar a conferência dos valores recebidos por meio das vendas.
 O sistema deve permitir acompanhar as movimentações financeiras relacionadas às vendas, possibilitando visualizar os valores recebidos e auxiliar no controle financeiro da loja.
 
 
-
-
-
-
 ### 3.2 Requisitos Não Funcionais
 
-- Segurança: Login por perfil de usuário e conformidade com a LGPD.
-- Desempenho: O sistema deverá apresentar respostas às operações realizadas pelo usuário em até 3 segundos.
-- Usabilidade: Tela de caixa simples e aviso visual de estoque baixo.
-- Disponibilidade: Operacional durante todo o horário comercial.
-- Confiabilidade: Cancelamento de vendas interrompidas para proteger o estoque.
+
+- O sistema deve ser simples e fácil de usar, permitindo que os funcionários realizem as atividades do dia a dia sem dificuldades.
+- As informações sobre fantasias, vendas, clientes e fornecedores devem ser apresentadas de forma clara e organizada, facilitando a consulta dos dados.
+- As operações realizadas no sistema devem apresentar respostas às operações realizadas pelo usuário em até 3 segundos, sem causar demora durante o atendimento aos clientes.
+- O acesso ao sistema deve ser protegido, permitindo que somente pessoas autorizadas tenham acesso às informações da loja.
+- Os dados registrados no sistema devem ser mantidos corretamente, evitando perda de informações ou alterações indevidas.
+- O sistema deve estar disponível durante o horário de funcionamento da loja, permitindo que os funcionários registrem as atividades realizadas.
+
 
 ---
 
@@ -70,12 +71,12 @@ O sistema deve permitir acompanhar as movimentações financeiras relacionadas �
 
 Regras Operacionais
 
-- Venda e Estoque: Vendas só são finalizadas se houver QUANTIDADE DISPONIVEL em estoque.
+- Venda e Estoque: Vendas só são finalizadas se houver QUANTIDADE DISPONIVEL na loja.
 - Alerta de Estoque: Notifica reposição quando o estoque atinge a QUANTIDADE MÍNIMA.
 - Vínculo do Pedido: Todo pedido exige um CLIENTE, um FUNCIONÁRIO e ao menos uma VENDA.
 - Origem do Produto: Toda fantasia deve estar vinculada a um FORNECEDOR cadastrado.
 - Privacidade (LGPD): Dados do cliente (telefone e endereço) só são armazenados com autorização prévia.
-- Pagamentos: O sistema aceita apenas Crédito, Débito, PIX e Dinheiro (sem vendas a prazo).
+- Pagamentos: O sistema aceita pagamentos com apenas Crédito, Débito, PIX e Dinheiro.
 
 ---
 ## 5. Dicionário de Dados Conceitual (Preliminar) 
@@ -112,10 +113,11 @@ Regras Operacionais
 
 ---
 
-- Um cliente pode estar ou não cadastrado para conseguir realizar uma venda.
+- No sistema proposto, o cadastro do cliente é opcional para a realização de uma venda.
 - Uma venda deve possuir pelo menos um item, garantindo que não exista uma venda sem produto.
 - Cada venda deve estar associada a um Funcionário, permitindo identificar quem realizou o registro.
 - Uma Fantasia deve estar associada a um Fornecedor, conforme a organização do cadastro de produtos.
+
 
 ---
 
