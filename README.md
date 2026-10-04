@@ -151,44 +151,42 @@ As decisões de abstração e modelagem foram tomadas a partir das informações
 
 ## 9. Uso de Inteligência Artificial
 
-*(documentação obrigatória — não é opcional se o grupo usou IA em qualquer etapa: pesquisa, escrita, organização de ideias ou revisão de texto)*
 
-Se o grupo usou alguma ferramenta de IA (ChatGPT, Claude, Gemini, Perplexity etc.) em qualquer parte do trabalho, registre **para cada uso relevante**:
 
-| Item | O que registrar |
-|------|------------------|
-| **Ferramenta e etapa** | Qual IA foi usada e em qual parte do trabalho (ex.: pesquisa sobre o setor da organização, redação do README, organização dos requisitos, revisão ortográfica/gramatical). |
-| **Motivação** | Por que o grupo recorreu à IA nesse ponto específico. |
-| **Prompt(s) utilizados** | Texto exato (ou muito próximo) do que foi perguntado/pedido à IA. |
-| **Resposta recebida** | Resumo ou trecho relevante da resposta da IA. |
-| **Fontes consultadas e verificadas** | Se a IA citou fontes/dados, quais foram checadas pelo grupo e como (ex.: comparação com o que foi observado na visita de campo). |
-| **Trechos rejeitados ou corrigidos** | O que da resposta da IA foi descartado, editado ou corrigido manualmente, e por quê. |
-| **Justificativa da escolha final** | Por que o grupo manteve, adaptou ou rejeitou o que a IA sugeriu. |
-| **Reflexão crítica** | Limites, vieses ou erros identificados no uso da IA nessa etapa (ex.: informação desatualizada, alucinação, generalização incorreta sobre o tipo de organização). |
 
-*Se o grupo não usou nenhuma ferramenta de IA, declare isso explicitamente nesta seção.*
 
----
 
-## Critérios Atitudinais (20%)
-**Estes critérios NÃO constam explicitamente como item de entrega no README.** Eles são avaliados por meio de **Avaliação 360º entre os integrantes do grupo** (cada membro avalia os colegas de equipe) e, no caso da Colaboração, também pela **colaboração equilibrada no histórico de commits** do repositório GitHub — não pela leitura do restante do repositório nem pela apresentação:
 
-- **Participação (5%):** envolvimento nas discussões técnicas e nas decisões do grupo.
-- **Comprometimento (5%):** cumprimento de prazos e responsabilidades assumidas.
-- **Colaboração (5%):** respeito às contribuições dos colegas, cooperação na construção do projeto e colaboração equilibrada no histórico de commits do repositório GitHub.
-- **Autonomia (5%):** busca independente de soluções e proposta de melhorias.
 
----
 
-## Resumo dos Pesos
 
-| Dimensão | Peso total |
-|----------|-----------|
-| Conceitual (contexto, requisitos/regras, modelagem, justificativa técnica) | 30% |
-| Procedimental (requisitos, fluxogramas, dicionário de dados, DER) | 50% |
-| Atitudinal (participação, comprometimento, colaboração, autonomia) | 20% |
 
-**Entrega final:** README.md completo + DER + Dicionário de Dados em HTML (com exceção dos cursos GTI) anexado no repositório GitHub do grupo.
+
+
+
+
+Durante a realização do trabalho, usamos o ChatGPT como uma ferramenta de apoio. Ele foi utilizado principalmente para tirar dúvidas sobre o trabalho, entender melhor alguns conceitos de banco de dados e ajudar na organização e revisão dos textos.
+
+| **Item**                             | **Registro**                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Ferramenta e etapa**               | Foi utilizado o **ChatGPT** durante algumas etapas do projeto, principalmente na modelagem conceitual, definição das entidades e atributos, cardinalidades, regras de negócio, dicionário de dados e revisão dos textos do trabalho.                                                                                                                                                          |
+| **Motivação**                        | Usamos a ferramenta quando surgiam dúvidas sobre como representar alguma informação no modelo ou sobre como escrever determinada parte do trabalho. Também usamos para conferir se alguns textos estavam claros e se faziam sentido com o que tínhamos levantado na entrevista.                                                                                                               |
+| **Prompt(s) utilizados**             | Foram feitas perguntas como: **“Um cliente pode estar ou não cadastrado para realizar uma venda?”**, **“Essa cardinalidade está correta?”**, **“Como posso escrever essa regra de negócio?”**, **“O que faço com esse log?”** e **“Essa justificativa técnica está correta?”**. Também enviamos algumas partes do trabalho para entender o que poderia ser melhorado.                         |
+| **Resposta recebida**                | O ChatGPT explicou os conceitos que estavam gerando dúvidas e deu algumas sugestões de como organizar os relacionamentos, regras e textos. Em alguns casos, também mostrou outras possibilidades para que pudéssemos comparar com o que já tínhamos feito.                                                                                                                                    |
+| **Fontes consultadas e verificadas** | As informações sobre a loja não foram tiradas diretamente da IA. Usamos principalmente as informações da entrevista realizada pelo grupo. As respostas do ChatGPT serviram como apoio e foram comparadas com o que realmente foi informado sobre a Lolly Fantasias.                                                                                                                           |
+| **Trechos rejeitados ou corrigidos** | Algumas sugestões foram modificadas ou não foram utilizadas porque não representavam exatamente o funcionamento da loja. Isso aconteceu principalmente durante a definição das cardinalidades e dos relacionamentos entre Cliente, Venda e Fantasia. Nessas situações, voltamos para as informações da entrevista e discutimos entre o grupo qual representação fazia mais sentido.           |
+| **Justificativa da escolha final**   | A sugestão da IA só foi utilizada quando fazia sentido para o nosso projeto. As decisões finais foram feitas pelo grupo, sempre de acordo com a entrevista, os requisitos da atividade e as discussões entre o grupo.                                                                                                                                                               |
+| **Reflexão crítica**                 | O ChatGPT ajudou bastante quando tínhamos dúvidas, principalmente para entender alguns conceitos que ainda não estavam claros, ajudou também na velocidade de escrita e organização dos tópicos, mas percebemos que nem toda sugestão poderia ser usada no nosso caso, pois a IA interpretou algumas situações de forma diferente da realidade da loja. Por isso, analisamos as respostas antes de colocar alguma informação no trabalho. |
+
+
+
+
+
+
+
+
+
+
 
 
 
