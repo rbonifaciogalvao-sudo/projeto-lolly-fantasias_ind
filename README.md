@@ -18,7 +18,7 @@
 - Loja comercial com fins lucrativos, de pequeno porte, com uma unidade e uma pessoa trabalhando atualmente. Realiza vendas e atendimento aos clientes, comercializando diferentes tipos e tamanhos de fantasias. A organização trabalha com diferentes categorias de fantasias, como Halloween, super-heróis, profissões e princesas.
 
 - **Problemas e necessidades identificados:**
-- A Lolly Fantasias apresenta dificuldades relacionadas ao controle e à organização das informações de suas atividades. Atualmente, não existe um controle sistematizado da entrada e saída de fantasias, das vendas realizadas, do fechamento de caixa e do fluxo de caixa. Também não existe um controle adequado que permita acompanhar de forma organizada a quantidade de fantasias disponíveis em estoque. Essa falta de controle pode dificultar o acompanhamento das movimentações da loja e a consulta das informações necessárias para a realização das atividades. Dessa forma, identifica-se a necessidade de um sistema que permita organizar e centralizar essas informações, facilitando o controle do estoque, das vendas e das movimentações financeiras da organização.
+- Na Lolly Fantasias, existe dificuldades relacionadas ao controle e à organização das informações de suas atividades. Atualmente, não existe um sistema que controle a entrada e saída de fantasias, as vendas realizadas, o fechamento de caixa e do fluxo de caixa. Também não existe um uma forma adequada que permita acompanhar de forma organizada a quantidade de fantasias disponíveis em estoque. A falta de controle dificulta o acompanhamento das movimentações da loja e a consulta das informações necessárias para a realização das atividades. O grupo percebeu a necessidade de um sistema que permita organizar e centralizar as informações, facilitando o controle do estoque, das vendas e das movimentações financeiras da organização.
 
 - **Justificativa da escolha:**
 - A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
@@ -48,17 +48,15 @@ Para manter as fantasias disponíveis para venda, a loja recebe novas fantasias 
 ## 3. Requisitos do Sistema
 ### 3.1 Requisitos Funcionais
 
-O sistema deve permitir registrar a entrada de novas fantasias no estoque e controlar a saída das mercadorias quando uma venda for realizada. Dessa forma, será possível acompanhar a quantidade disponível de cada fantasia e identificar quando o estoque estiver baixo.
-O sistema deve permitir registrar as vendas realizadas, informando as fantasias vendidas, a quantidade, os valores, data e, quando necessário, o cliente relacionado à venda. O registro deve permitir consultar as vendas realizadas posteriormente.
-O sistema deve permitir realizar o fechamento do caixa ao final do período, registrando e conferindo os valores movimentados durante o atendimento. O objetivo é possibilitar a conferência dos valores recebidos por meio das vendas.
-O sistema deve permitir acompanhar as movimentações financeiras relacionadas às vendas, possibilitando visualizar os valores recebidos e auxiliar no controle financeiro da loja.
+O sistema deve permitir registrar a entrada de novas fantasias no estoque e controlar a saída das mercadorias quando uma venda for realizada. Dessa forma, será possível acompanhar a quantidade disponível de cada fantasia e identificar quando o estoque estiver baixo;
+registrar as vendas realizadas, informando as fantasias vendidas, a quantidade, os valores, data e, quando necessário, o cliente relacionado à venda. O registro deve permitir consultar as vendas realizadas posteriormente; realizar o fechamento do caixa ao final do período, registrando e conferindo os valores movimentados durante o atendimento. O objetivo é possibilitar a conferência dos valores recebidos por meio das vendas;
+acompanhar as movimentações financeiras relacionadas às vendas, possibilitando visualizar os valores recebidos e auxiliar no controle financeiro da loja; todas as entidades devem ter ID para serem diferenciados.
 
 
 ### 3.2 Requisitos Não Funcionais
 
-
 - O sistema deve ser simples e fácil de usar, permitindo que os funcionários realizem as atividades do dia a dia sem dificuldades.
-- As informações sobre fantasias, vendas, clientes e fornecedores devem ser apresentadas de forma clara e organizada, facilitando a consulta dos dados.
+- As informações sobre fantasias, vendas, clientes e fornecedores devem ser apresentadas de forma inequívoca e organizada, para facilitar a consulta dos dados.
 - As operações realizadas no sistema devem apresentar respostas às operações realizadas pelo usuário em até 3 segundos, sem causar demora durante o atendimento aos clientes.
 - O acesso ao sistema deve ser protegido, permitindo que somente pessoas autorizadas tenham acesso às informações da loja.
 - Os dados registrados no sistema devem ser mantidos corretamente, evitando perda de informações ou alterações indevidas.
@@ -130,13 +128,13 @@ Regras Operacionais
 ---
 
 ## 8. Justificativa Técnica
-As entidades CLIENTE, FUNCIONÁRIO, VENDA, FANTASIA e FORNECEDOR foram escolhidas por representarem os principais elementos identificados durante a entrevista realizada com a loja. A definição das entidades buscou representar os aspectos mais relevantes do funcionamento da organização e possibilitar um maior controle das informações.
+As entidades CLIENTE, FUNCIONÁRIO, VENDA, FANTASIA e FORNECEDOR foram escolhidas por representarem os principais elementos que apareceram na entrevista feita com a loja. A descrição das entidades representa os aspectos mais relevantes do funcionamento da organização. Isso permite controlar melhor as informações.
 
-Os atributos da entidade FANTASIA foram definidos com base na forma como a própria loja identifica e organiza suas fantasias. Dessa forma, foram considerados dados como gênero, nome, tamanho, categoria, valor e quantidade disponível. Também foram adicionados identificadores (ID) às entidades para garantir que cada registro pudesse ser identificado de forma única, evitando ambiguidades e facilitando os relacionamentos entre as entidades.
+Os atributos da entidade FANTASIA foram definidos com base na forma como a própria loja identifica e organiza suas fantasias. Assim, foram usados dados como gênero, nome, tamanho, categoria, valor e quantidade disponível. Também foram adicionados identificadores (ID) às entidades para que cada registro possa ser identificado de forma única, evitando ambiguidades e facilitando os relacionamentos entre as entidades.
 
-A entidade CLIENTE foi mantida no modelo mesmo que a loja atualmente não possua um cadastro de clientes, pois, no sistema proposto, seu registro possibilitaria relacionar vendas aos respectivos clientes. Isso pode contribuir para o controle das operações, identificação de possíveis irregularidades e análise das vendas, permitindo observar quais produtos apresentam maior movimentação e retorno para a loja.
+A entidade CLIENTE foi mantida no modelo mesmo que a loja atualmente não possua um cadastro de clientes, pois, no sistema proposto, seu registro possibilitaria relacionar vendas aos respectivos clientes. Isso ajudará  no controle das operações, e no acompanhamento das vendas, permitindo identificar quais produtos apresentam maior movimentação na loja.”
 
-A entidade FUNCIONÁRIO foi incluída porque o funcionário é responsável pela realização das vendas e pelo atendimento na loja. O relacionamento entre FUNCIONÁRIO e VENDA permite identificar quem realizou cada operação, facilitando o controle das vendas mesmo em situações de troca ou desligamento de funcionários.
+A entidade FUNCIONÁRIO foi adicionada porque o funcionário realiza as vendas e atende na loja. O relacionamento entre FUNCIONÁRIO e VENDA identifica quem realizou cada operação, além manter o controle das vendas mesmo em situações de troca ou desligamento de funcionários.
 
 A entidade VENDA foi criada para possibilitar um controle mais sólido e específico das vendas realizadas pela loja, registrando informações importantes de cada operação. Já a entidade FORNECEDOR foi incluída para identificar a origem das fantasias adquiridas pela loja. Dessa forma, caso uma fantasia apresente algum problema, como falta de itens ou defeito, será possível identificar o fornecedor responsável.
 
@@ -144,11 +142,11 @@ Em relação às cardinalidades, CLIENTE e VENDA foram relacionados de forma que
 
 A relação entre VENDA e FANTASIA considera que uma venda pode conter uma ou várias fantasias, pois a loja pode realizar vendas tanto no varejo quanto no atacado. Da mesma forma, uma mesma fantasia pode estar presente em várias vendas, pois as fantasias não são itens únicos, permitindo que diferentes clientes adquiram o mesmo modelo e tamanho.
 
-A relação entre FANTASIA e FORNECEDOR permite que uma fantasia esteja relacionada a vários fornecedores e que um fornecedor forneça várias fantasias. Essa decisão considera que diferentes fornecedores podem oferecer modelos semelhantes ou iguais, inclusive com preços diferentes.
+A relação entre FANTASIA e FORNECEDOR permite que uma fantasia esteja relacionada a vários fornecedores e que um fornecedor forneça várias fantasias. Isso quer dizer que, diferentes fornecedores podem oferecer modelos semelhantes ou iguais, inclusive com preços diferentes.
 
-Durante a modelagem, a entidade ITEM_VENDA foi retirada porque seus atributos representavam informações que poderiam ser diretamente associadas à entidade FANTASIA. Dessa forma, esses atributos foram incorporados à FANTASIA, evitando informações duplicadas e tornando o modelo mais adequado à realidade observada na loja.
+Durante a modelagem, a entidade ITEM_VENDA foi retirada porque seus atributos representavam informações que poderiam ser diretamente associadas à entidade FANTASIA. Assim, esses atributos foram atribuídas à FANTASIA, evitando informações duplicadas e tornando o modelo mais adequado à realidade observada na loja.
 
-Assim, as decisões de abstração e modelagem foram tomadas a partir das informações obtidas na entrevista e das necessidades identificadas para o sistema proposto, buscando representar os principais elementos da loja, evitar duplicidade de informações e estabelecer relacionamentos que correspondam ao funcionamento das vendas, dos produtos, dos funcionários e dos fornecedores.
+As decisões de abstração e modelagem foram tomadas a partir das informações obtidas na entrevista e das necessidades identificadas para o sistema proposto, buscando representar os principais elementos da loja, evitar duplicidade de informações e estabelecer relacionamentos que correspondam ao funcionamento das vendas, dos produtos, dos funcionários e dos fornecedores.
 
 
 ## 9. Uso de Inteligência Artificial
@@ -199,19 +197,9 @@ Se o grupo usou alguma ferramenta de IA (ChatGPT, Claude, Gemini, Perplexity etc
 
 
 
-### **Uso de Inteligência Artificial**
 
-| Item | O que registrar |
-| --- | --- |
-| **Ferramenta e etapa** | **Gemini (Google)** — Utilizada nas etapas de organização de requisitos, criação de dados fictícios, estruturação da modelagem conceitual, elaboração do Dicionário de Dados e mapeamento de regras de negócio a partir do DER. |
-| **Motivação** | Agilizar a estruturação teórica do relatório, garantir a padronização das tabelas de requisitos e obter exemplos de dados fictícios coerentes com o Diagrama Entidade-Relacionamento da loja de fantasias. |
-| **Prompt(s) utilizados** | • *"cria os dados fictícios de um cliente de uma loja de fantasias e para a loja tambem, de acordo com as coisas que tem na imagem"* <br>
 
-<br> • *"3.2 Requisitos Não Funcionais (...) diminui"* <br>
 
-<br> • *"Regras de Negócio (...) diminui"* <br>
-
-<br> • *"6. Modelagem Conceitual (...) e o 6 seria como"* <br>
 
 <br> • *"5. Dicionário de Dados Conceitual (...)"* |
 | **Resposta recebida** | Resumos estruturados de Requisitos Não Funcionais, tabelas e listas de dados fictícios, descrição detalhada dos pilares da modelagem conceitual (entidades, atributos, relacionamentos, restrições) e a estrutura completa em tabelas para o Dicionário de Dados. |
