@@ -78,7 +78,7 @@ Regras Operacionais
 ---
 ## 5. Dicionário de Dados Conceitual (Preliminar) 
 
-http://127.0.0.1:5500/dicionario.html
+[Dicionário de dados](dicionario.html)
 
 ---
 

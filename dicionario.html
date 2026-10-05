@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+    <title>Dicionário de Dados</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+        }
+        th, td {
+            border-bottom: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            font-size: 18px;
+        }
+        h2 {
+            padding: 1px;
+            text-align: left;
+            font-size: 25px;
+        }
+        .caixa {
+            /* largura */
+            width: auto;
+
+            /* altura */
+            height: 10px;
+            
+            /* cor do fundo */
+            background-color: #0011ff88;
+            
+            /* borda */
+            border: 2px solid #001b64f3;
+            
+            /* distancia da palavra ate o fim da caixa */
+            padding: 24px;
+            
+            /* distancia de cima ate a caixa */
+            margin: 20px;
+            
+            /* borda arredondada */
+            border-radius: 8px;
+
+            display: flex;
+   
+            align-items: center; 
+        }
+        
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+<h1>Caso: Dicionário de Dados de uma loja de fantasias</h1>
+
+    <h2>1. Modelo conceitual</h2>
+
+
+<p>  Este modelo representa uma loja de fantasias, na qual os clientes podem realizar compras de fantasias disponíveis no estoque. Cada venda é realizada por um funcionário e pode estar associada a um cliente cadastrado. Uma venda pode conter uma ou várias fantasias, sendo que uma mesma fantasia pode estar presente em diferentes vendas. As fantasias também podem estar relacionadas a um ou vários fornecedores, permitindo representar o controle dos produtos comercializados pela loja.
+</p>
+
+<table>
+    <thead>
+
+        <tr>
+            <th>Entidade</th>
+            <th>Relaciona-se</th>
+            <th>Cardinalidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CLIENTE</td>
+            <td>VENDA</td>
+            <td>0:n - todo cliente pode ter nenhuma ou várias compras na loja.</td>
+        </tr>
+
+        <tr>
+            <td>VENDA</td>
+            <td>CLIENTE</td>
+            <td>0:1 - toda venda pode pertencer a nenhum ou a somente um cliente</td>
+        </tr>
+
+        <tr>
+            <td>VENDA</td>
+            <td>FUNCIONÁRIO</td>
+            <td>1:1 - toda venda é realizada por somente um funcionário</td>
+        </tr>
+
+        <tr>
+            <td>FUNCIONÁRIO</td>
+            <td>VENDA</td>
+            <td>0:n - o funcionário pode realizar nenhuma ou várias vendas</td>
+        </tr>
+
+        <tr>
+            <td>VENDA</td>
+            <td>FANTASIA</td>
+            <td>1:n - uma venda pode ter uma ou várias fantasias</td>
+        </tr>
+
+        <tr>
+            <td>FANTASIA</td>
+            <td>VENDA</td>
+            <td>1:n - Uma fantasia pode estar relacionada a uma ou várias vendas</td>
+        </tr>
+
+        <tr>
+            <td>FANTASIA</td>
+            <td>FORNECEDOR</td>
+            <td>0:n - Uma fantasia pode estar relacionada a nenhum ou vários fornecedores.</td>
+        </tr>
+
+        <tr>
+            <td>FORNECEDOR</td>
+            <td>FANTASIA</td>
+            <td>0:n - o fornecedor pode fornecer nenhuma ou várias fantasias</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>VENDA é a entidade responsável por registrar as vendas realizadas pela loja. Uma venda pode estar associada a nenhum ou a um cliente, é realizada por um funcionário e contém uma ou várias fantasias. Uma mesma fantasia pode estar presente em diferentes vendas, representando as diferentes comercializações do produto ao longo do tempo.
+</p>
+
+<p><strong>Cliente: </strong>Pessoa que realiza compras na loja e fornece seus dados para cadastro. </p>
+
+<p><strong>Funcionário: </strong>Pessoa responsável por realizar e registrar as vendas da loja.</p>
+
+<p><strong>Venda: </strong>É o registro de uma compra realizada na loja, contendo informações como data e forma de pagamento.</p>
+
+<p><strong>Fantasia: </strong>É o produto comercializado pela loja, identificado por informações como nome, gênero, tamanho, categoria, valor e quantidade disponível. </p>
+
+<p><strong>Fornecedor: </strong>É a pessoa ou empresa responsável por vender as fantasias para a loja</p>
+
+
+<h1>2. Fluxo de dados (visão de DFD)</h1>
+
+<p>Cliente chega à loja → solicita uma ou mais FANTASIAS → o funcionário verifica a quantidade disponível na loja → caso a quantidade disponível não seja suficiente para atender à solicitação, o funcionário consulta o estoque para verificar e buscar as unidades restantes → as fantasias disponíveis são entregues ao cliente → o cliente realiza o pagamento → após a confirmação do pagamento, a VENDA é finalizada.</p>
+
+
+<h1>3. Convenções do dicionário</h1> ver como fica isso
+SGBD: MySQL 8, mecanismo de armazenamento InnoDB — cuida da persistência dos arquivos de dados, do log de transações (redo/undo) e mantém o índice primário clusterizado por chave.
+
+
+Codificação de caracteres: utf8mb4 com collation utf8mb4_0900_ai_ci. Escolhida em vez de latin1 por cobrir acentuação do português sem perda em campos de nome e texto livre, e por ser compatível com qualquer caractere Unicode que apareça em nomes de clientes, funcionários, fantasias, categorias, fornecedores e endereços.
+
+<p><strong>Notação formal</strong> (símbolos usados neste dicionário):</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Símbolo</th>
+            <th>Significado</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <td>=</td>
+            <td>é composto de</td>
+        </tr>
+
+        
+        <tr>
+            <td>+</td>
+            <td>e (conecta elementos obrigatórios)</td>
+        </tr>
+
+        <tr>
+            <td>()</td>
+            <td>opcional</td>
+        </tr>
+
+        <tr>
+            <td>[ \| ] </td>
+            <td>escolha obrigatória entre alternativas</td>
+        </tr>
+        <td>@</td>
+        <td>identificador (chave primária)</td>
+    </tbody>
+    
+</table>
+
+
+<p> <strong>Prefixos:</strong>  ID_ = identificador (não sofre operação matemática); QTD_ = quantidade (pode sofrer operação matemática).</p>
+
+
+<h1>4. Dicionário de dados por entidade</h1>
+
+<h2>CLIENTE</h2>
+
+   <div class="caixa">
+    <p>CLIENTE = @ID_CLIENTE + NOME + (TELEFONE) + (ENDEREÇO) </p>
+    </div>
+
+    
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leitura: @ID_CLIENTE é o identificador único do cliente; O NOME é obrigatório e é conectado por +, (TELEFONE) e (ENDEREÇO) são informações opcionais. </p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo físico</th>
+      <th>Obrigatório</th>
+      <th>Significado e relevância</th>
+    </tr>
+
+</thead>
+  <tbody>
+    <tr>
+      <th>NOME</th>
+      <td>varchar(120) </td>
+      <td>Sim</td>
+      <td>Nome completo do cliente; identifica o cliente no cadastro e nas vendas realizadas pela loja</td>
+    </tr>
+    
+    <tr>
+      <th>ID_CLIENTE</th>
+      <td>integer</td>
+      <td>Sim</td>
+      <td>Código de identificação do cliente; não sofre operação matemática</td>
+    </tr>
+
+  </tbody>
+    <tr>
+      <th>Telefone</th>
+      <td>varchar(20)</td>
+      <td>Não</td>
+      <td>Número de telefone do cliente; usado para contato quando necessário</td>
+    </tr>
+
+  </tbody>
+    <tr>
+      <th>ENDEREÇO</th>
+      <td>varchar(255)</td>
+      <td>Não</td>
+      <td>Endereço completo do cliente; usado quando necessário para entrega</td>
+    </tr>     
+</table>
+
+
+<p>Índices: PK ID_CLIENTE; índice em NOME para facilitar a busca do cliente pelo nome.</p>
+
+<br><br>
+<hr>
+<br>
+
+<h2>FUNCIONÁRIO</h2>
+
+
+   <div class="caixa">
+        <p>FUNCIONÁRIO = @ID_FUNCIONÁRIO + NOME + CARGO + TELEFONE </p>
+    </div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leitura: @ID_FUNCIONÁRIO é o identificador único do funcionário; NOME, CARGO e TELEFONE são informações obrigatórias e são conectadas por +.
+</p>
+
+</body> 
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo físico</th>
+      <th>Obrigatório</th>
+      <th>Significado e relevância</th>
+    </tr>
+
+</thead>
+  <tbody>
+    <tr>
+      <th>NOME</th>
+      <td>varchar(120)</td>
+      <td>Sim</td>
+      <td>Nome completo do funcionário; identifica o funcionário na loja, nos atendimentos e nas vendas realizadas</td>
+    </tr>
+
+</tbody>
+    <tr>
+      <th>ID_FUNCIONÁRIO</th>
+      <td>integer</td>
+      <td>Sim</td>
+      <td>Código de identificação do funcionário; não sofre operação matemática</td>
+    </tr>
+
+</tbody>
+    <tr>
+      <th>CARGO</th>
+      <td>varchar(120)</td>
+      <td>Sim</td>
+      <td>Função desempenhada pelo funcionário na loja</td>
+    </tr>     
+
+      </tbody>
+    <tr>
+      <th>TELEFONE</th>
+      <td>varchar(20)</td>
+      <td>Sim</td>
+      <td>Número de telefone do funcionário; permite contato para assuntos relacionados às atividades da loja</td>
+    </tr>  
+ </table>
+<br><br><hr><br>
+
+
+<p>Índices: PK ID_FUNCIONÁRIO; índice em NOME para facilitar a busca do funcionário pelo nome.</p>
+
+
+    <h2>VENDA</h2>
+    
+   <div class="caixa">
+        <p>VENDA = @ID_VENDA + (ID_CLIENTE) + DATA_VENDA + FORMA_PAGAMENTO</p>
+        
+    </div>
+    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Leitura: @ID_VENDA é o identificador único da venda; ID_CLIENTE identifica opcionalmente o cliente relacionado à venda; DATA_VENDA e FORMA_PAGAMENTO são informações da venda.
+</p>
+    <table>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo físico</th>
+      <th>Obrigatório</th>
+      <th>Significado e relevância</th>
+    </tr>
+
+    <tbody>
+        <tr>
+      <th>ID_CLIENTE</th>
+      <td>integer</td>
+      <td>Não</td>
+      <td>Identifica o cliente associado à venda e permite relacionar a venda aos seus dados cadastrais, quando houver cadastro</td>
+
+        </tr>
+
+        <tr>
+            <th>ID_VENDA</th>
+            <td>integer</td>
+            <td>Sim</td>
+            <td>Identifica de forma única cada venda realizada pela loja</td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <th>FORMA_PAGAMENTO</th>
+            <td>varchar(30)</td>
+            <td>Sim</td>
+            <td>Identifica a forma utilizada pelo cliente para realizar o pagamento da venda.</td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <th>DATA_VENDA</th>
+            <td>datetime</td>
+            <td>Sim</td>
+            <td>Registra a data em que a venda foi realizada, permitindo acompanhar e consultar o histórico de vendas da loja.</td>
+        </tr>
+    </tbody>
+    </table>
+    <br><br><hr><br>
+
+<p>Índices: PK ID_VENDA; índice em DATA_VENDA para consultas e relatórios por período; índice em ID_CLIENTE para localizar vendas relacionadas a um cliente, quando houver cadastro.</p>
+
+
+    <h2>FANTASIA</h2>
+    
+    
+   <div class="caixa">
+        <p>FANTASIA = @ID_FANTASIA + GÊNERO + NOME + TAMANHO + CATEGORIA + VALOR_UNITÁRIO + QTD_MÍNIMA + QTD_DISPONÍVEL</p>
+        
+    </div>
+    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Leitura: @ID_FANTASIA é o identificador único da fantasia; GÊNERO é uma informação obrigatória, podendo assumir os valores Feminino (F) ou Masculino (M). NOME, TAMANHO, CATEGORIA, VALOR_UNITÁRIO, QTD_MÍNIMA e QTD_DISPONÍVEL são informações da fantasia.</p>
+<table>
+
+
+<thead>
+    <tr>
+        <th>Atributo</th>
+        <th>Tipo físico</th>
+        <th>Obrigatório</th>
+        <th>Significado e relevância</th>
+    </tr>
+</thead>
+
+<tbody>
+        <tr>
+            <th>ID_FANTASIA</th>
+            <td>integer</td>
+            <td>Sim</td>
+            <td>Identificador da fantasia</td>
+
+        <tr>
+            <th>GÊNERO</th>
+            <td>Caracter(M, F)</td>
+            <td>Sim</td>
+            <td>Indica gênero atribuído à fantasia, Feminino (F) Masculino(M)</td>
+        </tr>
+
+        <tr>
+            <th>NOME</th>
+            <td>varchar(120)</td>
+            <td>Sim</td>
+            <td>Permite identificar e localizar a fantasia no cadastro e nas vendas realizadas pela loja.</td>
+        </tr>
+
+        <tr>
+            <th>TAMANHO</th>
+            <td>varchar(3)</td>
+            <td>Sim</td>
+            <td>Indica o tamanho da fantasia, permitindo identificar a opção adequada ao cliente e controlar o estoque disponível.</td>
+        </tr>
+
+        <tr>
+            <th>CATEGORIA</th>
+            <td>varchar(30)</td>
+            <td>Sim</td>
+            <td>Indica a categoria à qual a fantasia pertence, facilitando a localização e controle do estoque.</td>
+        </tr>
+
+        <tr>
+            <th>VALOR_UNITÁRIO</th>
+            <td>decimal</td>
+            <td>Sim</td>
+            <td>Preço da unidade da fantasia, utilizado no cálculo do valor total da venda.</td>
+        </tr>
+
+        <tr>
+            <th>QTD_MÍNIMA</th>
+            <td>integer</td>
+            <td>Sim</td>
+            <td>Indica a quantidade mínima de fantasias que deve estar disponível no estoque, permitindo identificar quando é necessário repor o produto</td>
+        </tr>
+
+        <tr>
+            <th>QTD_DISPONÍVEL</th>
+            <td>integer</td>
+            <td>Sim</td>
+            <td>Indica a quantidade de fantasias disponível em estoque, permitindo controlar os produtos disponíveis para venda.</td>
+        </tr>
+</tbody>
+</table>
+
+<br><br><hr><br>
+<p>Índices: PK ID_FANTASIA; índice em NOME para facilitar a busca da fantasia pelo nome; índice em CATEGORIA para facilitar a consulta das fantasias por categoria.</p>
+
+
+<h2>FORNECEDOR</h2>
+
+
+   <div class="caixa">
+        <p>FORNECEDOR = @ID_FORNECEDOR + NOME + TELEFONE + CNPJ</p>
+        
+    </div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leitura: @ID_FORNECEDOR é o identificador único do fornecedor; NOME, TELEFONE e CNPJ são informações do fornecedor</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Atributo</th>
+            <th>Tipo físico
+
+            </th>
+            <th>Obrigatório</th>
+            <th>Significado e relevância</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>NOME</th>
+            <td>varchar(120)</td>
+            <td>Sim</td>
+            <td>Nome completo do fornecedor; identifica o fornecedor no cadastro e facilita sua localização para contato e compras.</td>
+
+        </tr>
+
+        <tr>
+            <th>ID_FORNECEDOR</th>
+            <td>integer</td>
+            <td>Sim</td>
+            <td>Identifica de forma única cada fornecedor cadastrado e permite relacioná-lo aos seus dados.</td>
+        </tr>
+
+        <tr>
+            <th>TELEFONE</th>
+            <td>varchar(20)</td>
+            <td>Sim</td>
+            <td>Número de telefone do fornecedor; facilita a comunicação para contato e compras.</td>
+            
+        </tr>
+
+        <tr>
+            <th>CNPJ</th>
+            <td>char(14)</td>
+            <td>Sim</td>
+            <td>Identifica o fornecedor de forma oficial e permite seu cadastro e controle na loja.</td>
+        </tr>
+    </tbody>
+</table>
+<br><br><hr><br>
+
+
+<p>Índices: PK ID_FORNECEDOR; índice em NOME para facilitar a busca do fornecedor pelo nome.</p>
+
+
+
+<h1>5. Log de acesso (metadado operacional)</h1> ver isso
+
+<p>As cinco tabelas — CLIENTE, FUNCIONÁRIO, VENDA, FANTASIA e FORNECEDOR — ficam sujeitas ao registro de acessos e operações realizadas no sistema. O log permite registrar informações sobre as operações realizadas nos dados, contribuindo para a rastreabilidade, auditoria e acompanhamento das alterações realizadas nas informações da loja.
+
+A retenção e o gerenciamento dos registros de log devem seguir as políticas definidas para o sistema, de forma independente dos dados de negócio.</p>
+
+<h2>6. Acesso por operação e conformidade com a LGPD (metadado administrativo) </h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Tabela</th>
+            <th>LER</th>
+            <th>INSERIR</th>
+            <th>ATUALIZAR</th>
+            <th>APAGAR</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>CLIENTE</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>Nenhum cliente deve ser apagado</td>
+        </tr>
+
+        <tr>
+            <td>FUNCIONÁRIO</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>Funcionário <br> (desligamento)</td>
+            <td>Funcionário não pode ser apagado do banco</td>
+        </tr>
+
+        <tr>
+            <td>VENDA</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>Funcionário <br> (cancelamento)</td>
+            <td>Nenhuma venda pode ser apagada do histórico</td>
+
+        </tr>
+
+        <tr>
+            <td>FANTASIA</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>Fantasia não deve ser apagada</td>
+        </tr>
+
+        <tr>
+            <td>FORNECEDOR</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>Funcionário</td>
+            <td>NFornecedor não deve ser apagado</td>
+        </tr>
+
+    </tbody>
+</table>
+</head>
+<body>
+
+</body>
+</html>
