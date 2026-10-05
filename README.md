@@ -23,7 +23,8 @@
 - A loja foi escolhida por ser acessível ao nosso grupo e por não possuir um sistema de controle. Dessa forma, o projeto poderá propor uma solução para auxiliar no controle de estoque, vendas e fluxo de caixa.
   
 - **Evidências da organização:**
-- <img width="1600" height="900" alt="WhatsApp Image 2026-10-02 at 16 30 11" src="https://github.com/user-attachments/assets/ccd48c83-9b6d-43a6-b547-eedf4791bfdd" />
+
+- [Foto](fotoDoEstabelecimento.jpeg)
 - https://maps.app.goo.gl/97rXVKvdabmSye7s7
 - R. Alexandrino Pedroso, 264 - Loja 16 - Canindé, São Paulo - SP, 03031-030, Brasil
 - https://www.instagram.com/lollyfantasias?stkn=MWg5dmlhdmF6ZngyNQ==
@@ -38,9 +39,6 @@ Atendimento e venda de fantasias: o cliente solicita uma ou mais fantasias, o fu
 Quando a quantidade de fantasias disponível na loja não é suficiente para atender à solicitação do cliente, o funcionário verifica no estoque para saber se há a quantidade desejada pelo cliente e, busca as unidades restantes.
 Para manter as fantasias disponíveis para venda, a loja recebe novas fantasias dos fornecedores. Esse recebimento ajuda a repor os produtos e manter o estoque abastecido para atender aos clientes.
 
-
-- **Fluxogramas:** 
-- <img width="1252" height="123" alt="image" src="https://github.com/user-attachments/assets/4eda3731-07f9-4f20-a531-aca333b033c3" />
 
 ---
 
@@ -121,9 +119,7 @@ Regras Operacionais
 ## 7. Diagrama Entidade-Relacionamento (DER)
 
 
-
-<img width="1120" height="661" alt="Captura de tela 2026-10-04 160718" src="https://github.com/user-attachments/assets/a5a7ab7c-21fb-4d87-aea7-6c82ae7e76ad" />
-
+[DER](DER.png)
 
 ---
 
